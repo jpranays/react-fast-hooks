@@ -1,0 +1,46 @@
+# Node modules
+/node_modules
+
+# Build output
+/dist
+
+# Rollup cache
+/.rollup.cache
+
+# TypeScript build artifacts
+*.tsbuildinfo
+*.d.ts
+
+# Rollup plugin outputs (if needed)
+*.cjs.js
+*.esm.js
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Jest coverage
+/coverage
+
+# Source maps
+/**/*.map

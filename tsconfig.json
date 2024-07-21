@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "esnext",
+      "lib": ["dom", "es2015", "es2017"],
+      "allowJs": true,
+      "jsx": "react",
+      "declaration": true,
+      "declarationMap": false,
+      "emitDeclarationOnly": true,
+      "declarationDir": "./dist/types",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "strict": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "composite": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
