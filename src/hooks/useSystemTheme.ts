@@ -1,11 +1,14 @@
-// src/useSystemTheme.ts
-import { useEffect, useState } from 'react';
-import { DARK_MODE_QUERY, LIGHT_THEME, DARK_THEME } from '../constants/themeConstants';
+import { useEffect, useState } from "react";
+import { isBrowser } from "../utils";
 
-export type Theme = typeof LIGHT_THEME | typeof DARK_THEME;
+const DARK_MODE_QUERY = "(prefers-color-scheme: dark)";
+const LIGHT_THEME = "light" as const;
+const DARK_THEME = "dark" as const;
+
+type Theme = typeof LIGHT_THEME | typeof DARK_THEME;
 
 const getSystemTheme = (): Theme => {
-  if (typeof window !== 'undefined' && window.matchMedia) {
+  if (isBrowser() && window.matchMedia) {
     const query = window.matchMedia(DARK_MODE_QUERY);
     if (query.matches) {
       return DARK_THEME;
@@ -14,21 +17,24 @@ const getSystemTheme = (): Theme => {
   return LIGHT_THEME; // Default to light if no preference or prefers light mode
 };
 
+/**
+ * Returns the current system theme value.
+ */
 const useSystemTheme = (): Theme => {
   const [theme, setTheme] = useState<Theme>(() => getSystemTheme());
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.matchMedia) {
+    if (isBrowser() && window.matchMedia) {
       const query = window.matchMedia(DARK_MODE_QUERY);
 
       const handleChange = () => {
         setTheme(getSystemTheme());
       };
 
-      query.addEventListener('change', handleChange);
+      query.addEventListener("change", handleChange);
 
       return () => {
-        query.removeEventListener('change', handleChange);
+        query.removeEventListener("change", handleChange);
       };
     }
   }, []);
