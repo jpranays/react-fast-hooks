@@ -7,7 +7,7 @@ const config: Config = {
 	tagline: "Fasten Your React Development",
 	favicon: "img/favicon.ico",
 
-	url: "https://your-docusaurus-site.example.com",
+	url: "https://react-fast-hooks.netlify.app/",
 	baseUrl: "/",
 
 	organizationName: "jpranays", 
