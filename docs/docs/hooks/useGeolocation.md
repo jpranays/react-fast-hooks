@@ -14,10 +14,6 @@ import { useGeolocation } from "react-fast-hooks";
 const App = () => {
  const geolocation = useGeolocation();
 
- if ("code" in geolocation) {
-  return <p>Error: {geolocation.message}</p>;
- }
-
  return (
   <div>
    <p>Latitude: {geolocation.latitude}</p>
@@ -35,7 +31,7 @@ const App = () => {
 
 ### API
 
-Returns : `Geolocation` | `GeolocationError`
+Returns : `Geolocation`
 
 An `Geolocation` containing the following properties:
 
@@ -46,9 +42,10 @@ An `Geolocation` containing the following properties:
 - `altitudeAccuracy` : The accuracy of the altitude in meters.
 - `heading` : The direction of travel in degrees.
 - `speed` : The speed in meters per second.
-- `timestamp` : The time at which the location was retrieved.
+- `timestamp` : The time at which the location or error was occurred.
+- `error` : `GeolocationError`
 
-Or an `GeolocationError` containing the following properties:
+An `GeolocationError` containing the following properties:
 
 - `code` : The error code.
 - `message` : The error message.

@@ -12,7 +12,7 @@ Hook to set and get the document title.
 import { useTitle } from "react-fast-hooks";
 
 const App = () => {
-  const [title, setTitle] = useTitle("Initial Title");
+  const { setTitle } = useTitle("Initial Title");
 
   const changeTitle = () => {
     setTitle("New Title");
@@ -20,7 +20,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>{title}</h1>
       <button onClick={changeTitle}>Change Title</button>
     </div>
   );
@@ -29,9 +28,8 @@ const App = () => {
 
 ### API
 
-Parameter : `initialTitle: string`
+Parameter : `initialTitle*: string` 
 
-Returns : `Array`
+Returns : `Object`
 
-- `currentTitle` : The current document title.
 - `setTitle` : (newTitle: string) => void - A function to set the document title.

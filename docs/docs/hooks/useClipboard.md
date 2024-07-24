@@ -31,4 +31,4 @@ Returns : `Object`
 An object containing the following properties:
 
 - `copy` : A function to copy the provided text to the clipboard.
-- `isCopied` : A boolean indicating whether the text was successfully copied.
+- `isCopied` : A boolean state that is set to true when the text is successfully copied and resets to false after 2 seconds.
