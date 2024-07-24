@@ -6,23 +6,29 @@ A collection of performant and lightweight custom React hooks.
 
 ## Features
 
-- 🚀 **Lightweight and Fast**
-  - Designed to be minimal in size, ensuring your application remains performant and fast.
+ 🚀 **Lightweight and Fast**
 
-- 🌐 **SSR-Friendly**
-  - Built with Server-Side Rendering (SSR) compatibility, making it perfect for Next.js.
+- Designed to be minimal in size, ensuring your application remains performant and fast.
 
-- 📝 **Typed with TypeScript**
-  - Full TypeScript support, including comprehensive type definitions.
+ 🌐 **SSR-Friendly**
 
-- 🌲 **Tree Shaking Support**
-  - Optimized for tree shaking, ensuring only the code you use is included in your final bundle.
+- Built with Server-Side Rendering (SSR) compatibility, making it perfect for Next.js.
 
-- 🌍 **Cross-Browser Compatibility**
-  - Ensures consistent behavior across all major browsers.
+ 📝 **Typed with TypeScript**
 
-- 🔧 **Ease of Use**
-  - Designed with simplicity and ease of integration in mind.
+- Full TypeScript support, including comprehensive type definitions.
+
+ 🌲 **Tree Shaking Support**
+
+- Optimized for tree shaking, ensuring only the code you use is included in your final bundle.
+
+ 🌍 **Cross-Browser Compatibility**
+
+- Ensures consistent behavior across all major browsers.
+
+ 🔧 **Ease of Use**
+
+- Designed with simplicity and ease of integration in mind.
 
 ## Installation
 
