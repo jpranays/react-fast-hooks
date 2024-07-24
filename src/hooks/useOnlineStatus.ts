@@ -7,7 +7,7 @@ import { isBrowser } from "../utils";
  * @returns {boolean} Returns true if the browser is online, otherwise false.
  */
 const useOnlineStatus = (): boolean => {
-  const [isOnline, setIsOnline] = useState<boolean>(() => (isBrowser() ? navigator.onLine : true));
+  const [isOnline, setIsOnline] = useState<boolean>(() => (isBrowser() ? navigator.onLine : false));
 
   useEffect(() => {
     if (!isBrowser()) {

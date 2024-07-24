@@ -9,7 +9,7 @@ interface UseTitleResult {
  * Hook to set and get the document title.
  *
  * @param {string} initialTitle - The initial title to set.
- * @returns {UseTitleResult} An object with the setTitle function.
+ * @returns An object with the setTitle function.
  */
 const useTitle = (initialTitle: string): UseTitleResult => {
   const setTitle = useCallback((newTitle: string) => {

@@ -9,7 +9,7 @@ interface ClipboardHook {
 /**
  * Hook to copy text to the clipboard.
  *
- * @returns {ClipboardHook} Returns an object with `copy` function and `isCopied` boolean state.
+ * @returns Returns an object with `copy` function and `isCopied` boolean state.
  */
 const useClipboard = (): ClipboardHook => {
 	const [isCopied, setIsCopied] = useState<boolean>(false);
