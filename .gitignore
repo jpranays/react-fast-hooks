@@ -44,3 +44,6 @@ Thumbs.db
 
 # Source maps
 /**/*.map
+
+# local test
+/local-test
