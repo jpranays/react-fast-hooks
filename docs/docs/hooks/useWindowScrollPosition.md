@@ -9,10 +9,10 @@ Hook to get the current scroll position of the window.
 ### Usage
 
 ```typescript
-import { useScrollPosition } from 'react-fast-hooks';
+import { useWindowScrollPosition } from 'react-fast-hooks';
 
 const App = () => {
-  const { x, y } = useScrollPosition(200); // Optional throttle time
+  const { x, y } = useWindowScrollPosition(200); // Optional throttle time
 
   return (
     <div>

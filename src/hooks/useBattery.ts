@@ -34,7 +34,7 @@ interface NavigatorWithBattery extends Navigator {
 /**
  * Hook to get battery status.
  *
- * @returns Returns an object with battery status.
+ * @returns An object with battery status.
  */
 
 const useBattery = (): BatteryState => {

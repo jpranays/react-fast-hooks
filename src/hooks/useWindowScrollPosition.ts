@@ -15,7 +15,7 @@ const getWindowScrollPosition = (): WindowScrollPosition => ({
  * Hook to get the current window scroll position.
  * 
  * @param {number} [throttleTime=200] - The time in milliseconds to throttle the scroll event handler. Defaults to 200ms.
- * @returns {WindowScrollPosition} Returns an object with the current window scroll position (x and y).
+ * @returns An object with the current window scroll position (x and y).
  */
 const useWindowScrollPosition = (throttleTime: number = 200): WindowScrollPosition => {
   const [scrollPosition, setScrollPosition] = useState<WindowScrollPosition>(getWindowScrollPosition);

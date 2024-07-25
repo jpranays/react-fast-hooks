@@ -15,7 +15,7 @@ const getWindowSize = (): WindowSize => ({
  * Hook to get the current window size.
  * 
  * @param {number} [throttleTime=200] - The time in milliseconds to throttle the resize event handler. Defaults to 200ms.
- * @returns {WindowSize} Returns an object with the current window width and height.
+ * @returns An object with the current window width and height.
  */
 const useWindowSize = (throttleTime: number = 200): WindowSize => {
   const [windowSize, setWindowSize] = useState<WindowSize>(getWindowSize);
