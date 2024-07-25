@@ -19,7 +19,7 @@ const getSystemTheme = (): Theme => {
 
 /**
 * Hook to get the system theme.
-* @returns {Theme}  Returns the current system theme value.
+* @returns {Theme} The current system theme value (light or dark).
 */
 const useSystemTheme = (): Theme => {
   const [theme, setTheme] = useState<Theme>(() => getSystemTheme());

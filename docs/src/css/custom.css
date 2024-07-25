@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
 	--ifm-color-primary: #fd7e14;
 	--ifm-color-primary-dark: #e67e22;
@@ -21,9 +20,4 @@
 	--ifm-color-primary-lightest: #f39c12;
 	--hero-baner-bg: #1a202c;
 	--docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
-}
-
-body {
-	-ms-overflow-style: none;
-	font-family: "Montserrat", sans-serif;
 }

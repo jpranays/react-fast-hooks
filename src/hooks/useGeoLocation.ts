@@ -16,7 +16,7 @@ interface GeolocationState {
 /**
  * Hook to get the current geolocation.
  *
- * @returns Returns the geolocation state.
+ * @returns The geolocation state.
  */
 const useGeolocation = (): GeolocationState => {
 	const [state, setState] = useState<GeolocationState>({

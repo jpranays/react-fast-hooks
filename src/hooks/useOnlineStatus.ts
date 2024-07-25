@@ -4,7 +4,7 @@ import { isBrowser } from "../utils";
 /**
  * Hook to get the online status of the browser.
  *
- * @returns {boolean} Returns true if the browser is online, otherwise false.
+ * @returns {boolean} A boolean true if the browser is online, otherwise false.
  */
 const useOnlineStatus = (): boolean => {
   const [isOnline, setIsOnline] = useState<boolean>(() => (isBrowser() ? navigator.onLine : false));
