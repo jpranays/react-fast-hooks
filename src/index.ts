@@ -9,3 +9,4 @@ export { default as useWindowScrollPosition } from "./hooks/useWindowScrollPosit
 export { default as useWindowScrollIntoPosition } from "./hooks/useWindowScrollIntoPosition";
 export { default as useScrollPosition } from "./hooks/useScrollPosition";
 export { default as useScrollIntoPosition } from "./hooks/useScrollIntoPosition";
+export { default as useFocusBlur } from "./hooks/useFocusBlur";
