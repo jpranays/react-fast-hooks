@@ -27,7 +27,7 @@ const App = () => {
 
 Parameter  
 
-- `throttleTime` : A number indicating the time in milliseconds to throttle the window resize event. Defaults to 200.
+- `throttleTime` : A number indicating the time in milliseconds to throttle the window scroll event. Defaults to 200.
 
 Returns : `ScrollPosition`
 
