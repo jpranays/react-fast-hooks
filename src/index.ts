@@ -7,3 +7,5 @@ export { default as useBattery } from "./hooks/useBattery";
 export { default as useWindowSize } from "./hooks/useWindowSize";
 export { default as useWindowScrollPosition } from "./hooks/useWindowScrollPosition";
 export { default as useWindowScrollIntoPosition } from "./hooks/useWindowScrollIntoPosition";
+export { default as useScrollPosition } from "./hooks/useScrollPosition";
+export { default as useScrollIntoPosition } from "./hooks/useScrollIntoPosition";
