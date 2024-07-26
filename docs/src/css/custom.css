@@ -8,9 +8,7 @@
 	--ifm-color-primary-lightest: #f39c12;
 	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 	--hero-baner-bg: #ffffff;
-	.mainWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-Layout-styles-module{
-		background-color: #e67e2208;
-	}
+	--background-color: #e67e2208;
 }
 
 [data-theme="dark"] {
@@ -23,7 +21,5 @@
 	--ifm-color-primary-lightest: #f39c12;
 	--hero-baner-bg: #1a202c;
 	--docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
-	.mainWrapper_node_modules-\@docusaurus-theme-classic-lib-theme-Layout-styles-module{
-		background-color: unset;
-	}
+	--background-color: unset;
 }
