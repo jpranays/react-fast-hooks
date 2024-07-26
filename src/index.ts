@@ -14,3 +14,6 @@ export { default as useStopWatch } from "./hooks/useStopWatch";
 export { default as useFavicon } from "./hooks/useFavicon";
 export { default as useScript } from "./hooks/useScript";
 export { default as useHover } from "./hooks/useHover";
+export { default as useMediaQuery } from "./hooks/useMediaQuery";
+export { default as useLocalStorage } from "./hooks/useLocalStorage";
+export { default as useSessionStorage } from "./hooks/useSessionStorage";
