@@ -17,3 +17,5 @@ export { default as useHover } from "./hooks/useHover";
 export { default as useMediaQuery } from "./hooks/useMediaQuery";
 export { default as useLocalStorage } from "./hooks/useLocalStorage";
 export { default as useSessionStorage } from "./hooks/useSessionStorage";
+export { default as useDeviceOrientation } from "./hooks/useDeviceOrientation";
+export { default as useDimensions } from "./hooks/useDimensions";
