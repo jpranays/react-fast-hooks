@@ -35,7 +35,9 @@ export default function Home(): JSX.Element {
       title={`${siteConfig.title}`}
       description="Collection of React hooks for fast and efficient web development">
       <HomepageHeader />
-      <main>
+      <main style={{
+        backgroundColor: "var(--background-color)",
+      }}>
         <HomepageFeatures />
       </main>
     </Layout>
