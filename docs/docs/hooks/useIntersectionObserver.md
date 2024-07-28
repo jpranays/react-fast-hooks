@@ -13,28 +13,28 @@ import React, { useRef, useEffect } from "react";
 import { useIntersectionObserver } from "react-fast-hooks";
 
 const App = () => {
-	const [observer, entry] = useIntersectionObserver({
-		root: null,
-		rootMargin: "0px",
-		threshold: 1.0,
-	});
+ const [observer, entry] = useIntersectionObserver({
+  root: null,
+  rootMargin: "0px",
+  threshold: 1.0,
+ });
 
-	const elementRef = useRef<HTMLDivElement | null>(null);
+ const elementRef = useRef<HTMLDivElement | null>(null);
 
-	useEffect(() => {
-		observer(elementRef.current);
-	}, [observer]);
+ useEffect(() => {
+  observer(elementRef.current);
+ }, [observer]);
 
-	return (
-		<div>
-			<div
-				ref={elementRef}
-				style={{ height: "100vh", background: "lightblue" }}
-			>
-				{entry?.isIntersecting ? "In view" : "Out of view"}
-			</div>
-		</div>
-	);
+ return (
+  <div>
+   <div
+    ref={elementRef}
+    style={{ height: "100vh", background: "lightblue" }}
+   >
+    {entry?.isIntersecting ? "In view" : "Out of view"}
+   </div>
+  </div>
+ );
 };
 ```
 
