@@ -22,3 +22,4 @@ export { default as useDimensions } from "./hooks/useDimensions";
 export { default as useKeyPress } from "./hooks/useKeyPress";
 export { default as useKeyCombo } from "./hooks/useKeyCombo";
 export { default as useClickOutside } from "./hooks/useClickOutside";
+export { default as useIntersectionObserver } from "./hooks/useIntersectionObserver";
