@@ -1,8 +1,8 @@
 {
   "name": "react-fast-hooks",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A collection of custom React hooks",
-  "main": "dist/index.cjs.js",
+  "main": "dist/index.esm.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {

@@ -28,7 +28,7 @@ const useIntersectionObserver: UseIntersectionObserver = (
 	const [entry, setEntry] = useState<IntersectionObserverEntry | null>(null);
 
 	useEffect(() => {
-		if (!isBrowser() || !ref.current) {
+		if (!isBrowser() || !ref.current || !window.IntersectionObserver) {
 			return;
 		}
 
