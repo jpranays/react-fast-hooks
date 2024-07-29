@@ -19,3 +19,9 @@ export { default as useLocalStorage } from "./hooks/useLocalStorage";
 export { default as useSessionStorage } from "./hooks/useSessionStorage";
 export { default as useDeviceOrientation } from "./hooks/useDeviceOrientation";
 export { default as useDimensions } from "./hooks/useDimensions";
+export { default as useKeyPress } from "./hooks/useKeyPress";
+export { default as useKeyCombo } from "./hooks/useKeyCombo";
+export { default as useClickOutside } from "./hooks/useClickOutside";
+export { default as useIntersectionObserver } from "./hooks/useIntersectionObserver";
+export { default as useMutationObserver } from "./hooks/useMutationObserver";
+

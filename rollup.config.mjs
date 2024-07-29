@@ -4,17 +4,12 @@ import typescript from "@rollup/plugin-typescript";
 import terser from "@rollup/plugin-terser";
 import dts from "rollup-plugin-dts";
 import cleanup from "rollup-plugin-cleanup";
-import del from 'rollup-plugin-delete';
+import del from "rollup-plugin-delete";
 
 export default [
 	{
 		input: "src/index.ts",
 		output: [
-			{
-				file: "dist/index.cjs.js",
-				format: "cjs",
-				sourcemap: false,
-			},
 			{
 				file: "dist/index.esm.js",
 				format: "esm",
@@ -35,6 +30,6 @@ export default [
 	{
 		input: "./dist/types/index.d.ts",
 		output: [{ file: "dist/index.d.ts", format: "es" }],
-		plugins: [dts(), cleanup(), del({ targets: "dist/types", runOnce: true })],
+		plugins: [dts()],
 	},
 ];
