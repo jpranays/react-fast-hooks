@@ -11,7 +11,7 @@ interface UseFocusBlur {
  * @param {React.RefObject<HTMLElement>} elementRef - A ref to the element.
  * @returns An object with `focus` and `blur` functions.
  */
-const useFocusBlur: UseFocusBlur = (elementRef) => {
+const useFocusBlur: UseFocusBlur = (elementRef: React.RefObject<HTMLElement>) => {
   const focus = useCallback(() => {
     if (isBrowser() && elementRef.current) {
       elementRef.current.focus();

@@ -24,4 +24,5 @@ export { default as useKeyCombo } from "./hooks/useKeyCombo";
 export { default as useClickOutside } from "./hooks/useClickOutside";
 export { default as useIntersectionObserver } from "./hooks/useIntersectionObserver";
 export { default as useMutationObserver } from "./hooks/useMutationObserver";
+export { default as useEventListener } from "./hooks/useEventListener";
 
