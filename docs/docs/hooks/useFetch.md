@@ -10,7 +10,7 @@ Fetch data from an API endpoint with the `useFetch` hook.
 
 ```typescript
 import React from 'react';
-import useFetch from 'your-library';
+import {useFetch} from 'react-fast-hooks';
 
 const ExampleComponent = () => {
   const { data, loading, error, refetch } = useFetch<any>('https://jsonplaceholder.typicode.com/posts');

@@ -10,7 +10,7 @@ Enable precise control of long-press interactions for both touch and mouse event
 
 ```typescript
 import React, { useRef } from "react";
-import useLongPress from "react-fast-hooks";
+import {useLongPress} from "react-fast-hooks";
 
 const App = () => {
   const buttonRef = useRef<HTMLButtonElement>(null);
