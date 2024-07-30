@@ -20,12 +20,6 @@ const config: Config = {
 		defaultLocale: "en",
 		locales: ["en"],
 	},
-	scripts: [
-		{
-			src: "/custom.js",
-			defer: true,
-		},
-	],
 	presets: [
 		[
 			"classic",
