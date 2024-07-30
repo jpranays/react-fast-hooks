@@ -1,25 +1,26 @@
 :root {
-	--ifm-color-primary: #fd7e14;
-	--ifm-color-primary-dark: #e67e22;
-	--ifm-color-primary-darker: #d35400;
-	--ifm-color-primary-darkest: #c0392b;
-	--ifm-color-primary-light: #f39c12;
-	--ifm-color-primary-lighter: #f39c12;
-	--ifm-color-primary-lightest: #f39c12;
-	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-	--hero-baner-bg: #ffffff;
-	--background-color: #e67e2208;
+	--ifm-color-primary: #007bff; /* Bright Blue */
+	--ifm-color-primary-dark: #0056b3; /* Darker Blue */
+	--ifm-color-primary-darker: #004085; /* Even Darker Blue */
+	--ifm-color-primary-darkest: #003366; /* Navy Blue */
+	--ifm-color-primary-light: #66b2ff; /* Light Blue */
+	--ifm-color-primary-lighter: #cce5ff; /* Very Light Blue */
+	--ifm-color-primary-lightest: #e6f0ff; /* Pale Blue */
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* Subtle Highlight */
+	--hero-baner-bg: #f8f9fa; /* Light Gray */
+	--background-color: #ffffff; /* White */
 }
 
+
 [data-theme="dark"] {
-	--ifm-color-primary: #f39c12;
-	--ifm-color-primary-dark: #e67e22;
-	--ifm-color-primary-darker: #d35400;
-	--ifm-color-primary-darkest: #c0392b;
-	--ifm-color-primary-light: #f39c12;
-	--ifm-color-primary-lighter: #f39c12;
-	--ifm-color-primary-lightest: #f39c12;
-	--hero-baner-bg: #1a202c;
-	--docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
-	--background-color: unset;
+	--ifm-color-primary: #66b2ff; /* Light Blue */
+	--ifm-color-primary-dark: #007bff; /* Bright Blue */
+	--ifm-color-primary-darker: #0056b3; /* Darker Blue */
+	--ifm-color-primary-darkest: #003366; /* Navy Blue */
+	--ifm-color-primary-light: #80cfff; /* Light Cyan */
+	--ifm-color-primary-lighter: #cce5ff; /* Very Light Blue */
+	--ifm-color-primary-lightest: #e6f0ff; /* Pale Blue */
+	--hero-baner-bg: #212529; /* Dark Gray */
+	--docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Subtle Highlight */
+	--background-color: #121212; /* Very Dark Gray */
 }
