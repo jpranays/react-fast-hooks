@@ -28,5 +28,8 @@ export { default as useEventListener } from "./hooks/useEventListener";
 export { default as useWindowFocus } from "./hooks/useWindowFocus";
 export { default as useIdle } from "./hooks/useIdle";
 export { default as useMouse } from "./hooks/useMouse";
+export { default as useLongPress } from "./hooks/useLongPress";
+export { default as useFetch } from "./hooks/useFetch";
+export { default as useScrollLock } from "./hooks/useScrollLock";
 
 
