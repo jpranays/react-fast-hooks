@@ -25,4 +25,8 @@ export { default as useClickOutside } from "./hooks/useClickOutside";
 export { default as useIntersectionObserver } from "./hooks/useIntersectionObserver";
 export { default as useMutationObserver } from "./hooks/useMutationObserver";
 export { default as useEventListener } from "./hooks/useEventListener";
+export { default as useWindowFocus } from "./hooks/useWindowFocus";
+export { default as useIdle } from "./hooks/useIdle";
+export { default as useMouse } from "./hooks/useMouse";
+
 
