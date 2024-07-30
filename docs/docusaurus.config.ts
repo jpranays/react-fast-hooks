@@ -10,7 +10,7 @@ const config: Config = {
 	url: "https://react-fast-hooks.netlify.app/",
 	baseUrl: "/",
 
-	organizationName: "jpranays", 
+	organizationName: "jpranays",
 	projectName: "react-fast-hooks",
 
 	onBrokenLinks: "throw",
@@ -20,7 +20,12 @@ const config: Config = {
 		defaultLocale: "en",
 		locales: ["en"],
 	},
-
+	scripts: [
+		{
+			src: "/custom.js",
+			defer: true,
+		},
+	],
 	presets: [
 		[
 			"classic",
@@ -36,6 +41,11 @@ const config: Config = {
 	],
 
 	themeConfig: {
+		colorMode: {
+			defaultMode: "dark", // Set the default mode to dark
+			disableSwitch: false, // Allow users to switch themes
+			respectPrefersColorScheme: true, // Respect the OS preference
+		},
 		navbar: {
 			title: "react-fast-hooks",
 			items: [
@@ -54,7 +64,7 @@ const config: Config = {
 		},
 		prism: {
 			theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+			darkTheme: prismThemes.dracula,
 		},
 	} satisfies Preset.ThemeConfig,
 };
