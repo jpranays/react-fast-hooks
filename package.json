@@ -1,6 +1,6 @@
 {
 	"name": "react-fast-hooks",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A collection of custom React hooks",
 	"main": "dist/index.esm.js",
 	"module": "dist/index.esm.js",
@@ -42,7 +42,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jpranays/reactive-hooks.git"
+		"url": "https://github.com/jpranays/react-fast-hooks.git"
 	},
 	"author": "Pranay <pranay1315@gmail.com>",
 	"license": "MIT"
