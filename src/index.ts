@@ -35,5 +35,7 @@ export { default as useRandomColor } from "./hooks/useRandomColor";
 export { default as useDebounce } from "./hooks/useDebounce";
 export { default as usePrevious } from "./hooks/usePrevious";
 export { default as useDebouncedCallback } from "./hooks/useDebouncedCallback";
+export { default as useCookie } from "./hooks/useCookie";
+export { default as useUpdateEffect } from "./hooks/useUpdateEffect";
 
 
