@@ -1,6 +1,6 @@
 # [react-fast-hooks](https://react-fast-hooks.netlify.app/)
 
-<a href="https://github.com/jpranays/fast-react-hooks"><img src="https://img.shields.io/badge/-Github-323232?style=flat&logo=github&logoColor=white"/></a> <a href="https://npmjs.org/package/react-fast-hooks"><img src="https://img.shields.io/badge/-NPM-bb2222?style=flat&logo=npm"/></a> [![Install size](https://packagephobia.com/badge?p=react-fast-hooks)](https://packagephobia.com/result?p=react-fast-hooks) [![NPM Downloads](https://img.shields.io/npm/dm/react-fast-hooks.svg?style=flat)](https://npmcharts.com/compare/react-fast-hooks?minimal=true)
+<a href="https://github.com/jpranays/react-fast-hooks"><img src="https://img.shields.io/badge/-Github-323232?style=flat&logo=github&logoColor=white"/></a> <a href="https://npmjs.org/package/react-fast-hooks"><img src="https://img.shields.io/badge/-NPM-bb2222?style=flat&logo=npm"/></a> [![Install size](https://packagephobia.com/badge?p=react-fast-hooks)](https://packagephobia.com/result?p=react-fast-hooks) [![NPM Downloads](https://img.shields.io/npm/dm/react-fast-hooks.svg?style=flat)](https://npmcharts.com/compare/react-fast-hooks?minimal=true)
 
 A collection of performant and lightweight custom React hooks.
 
