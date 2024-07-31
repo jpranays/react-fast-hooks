@@ -32,5 +32,8 @@ export { default as useLongPress } from "./hooks/useLongPress";
 export { default as useFetch } from "./hooks/useFetch";
 export { default as useScrollLock } from "./hooks/useScrollLock";
 export { default as useRandomColor } from "./hooks/useRandomColor";
+export { default as useDebounce } from "./hooks/useDebounce";
+export { default as usePrevious } from "./hooks/usePrevious";
+export { default as useDebouncedCallback } from "./hooks/useDebouncedCallback";
 
 
