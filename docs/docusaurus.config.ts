@@ -40,6 +40,21 @@ const config: Config = {
 			disableSwitch: false, // Allow users to switch themes
 			respectPrefersColorScheme: true, // Respect the OS preference
 		},
+		algolia: {
+			appId: "X8HNC6MYE7",
+
+			apiKey: "28d17ffd008cca396c6102d9dd59c721",
+
+			indexName: "react-fast-hooks",
+
+			// Optional:
+			contextualSearch: false,
+
+			replaceSearchResultPathname: {
+				from: "/docs/", // or as RegExp: /\/docs\//
+				to: "/",
+			},
+		},
 		navbar: {
 			title: "react-fast-hooks",
 			items: [
