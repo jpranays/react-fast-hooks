@@ -43,9 +43,9 @@ const config: Config = {
 		algolia: {
 			appId: "X8HNC6MYE7",
 
-			apiKey: "28d17ffd008cca396c6102d9dd59c721",
+			apiKey: "fdfe3373eec93c325435356a7f4c458e",
 
-			indexName: "react-fast-hooks",
+			indexName: "crawler_react-fast-hooks",
 
 		},
 		navbar: {
