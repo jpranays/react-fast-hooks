@@ -47,13 +47,6 @@ const config: Config = {
 
 			indexName: "react-fast-hooks",
 
-			// Optional:
-			contextualSearch: false,
-
-			replaceSearchResultPathname: {
-				from: "/docs/", // or as RegExp: /\/docs\//
-				to: "/",
-			},
 		},
 		navbar: {
 			title: "react-fast-hooks",
