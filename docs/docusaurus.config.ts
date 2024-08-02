@@ -36,17 +36,9 @@ const config: Config = {
 
 	themeConfig: {
 		colorMode: {
-			defaultMode: "dark", // Set the default mode to dark
-			disableSwitch: false, // Allow users to switch themes
-			respectPrefersColorScheme: true, // Respect the OS preference
-		},
-		algolia: {
-			appId: "X8HNC6MYE7",
-
-			apiKey: "fdfe3373eec93c325435356a7f4c458e",
-
-			indexName: "crawler_react-fast-hooks",
-
+			defaultMode: "dark",
+			disableSwitch: false,
+			respectPrefersColorScheme: true,
 		},
 		navbar: {
 			title: "react-fast-hooks",
