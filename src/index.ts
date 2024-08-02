@@ -38,5 +38,6 @@ export { default as useDebouncedCallback } from "./hooks/useDebouncedCallback";
 export { default as useCookie } from "./hooks/useCookie";
 export { default as useUpdateEffect } from "./hooks/useUpdateEffect";
 export { default as useSound } from "./hooks/useSound";
+export { default as useVibration } from "./hooks/useVibration";
 
 
