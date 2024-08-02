@@ -1,7 +1,7 @@
 ---
-id: useStopWatch
-title: useStopWatch
-sidebar_label: useStopWatch
+id: useStopwatch
+title: useStopwatch
+sidebar_label: useStopwatch
 ---
 
 Hook to provide stopwatch functionality with SSR compatibility.
@@ -9,10 +9,10 @@ Hook to provide stopwatch functionality with SSR compatibility.
 ### Usage
 
 ```typescript
-import { useStopWatch } from "react-fast-hooks";
+import { useStopwatch } from "react-fast-hooks";
 
 const App = () => {
-  const { time, isRunning, start, stop, reset } = useStopWatch();
+  const { time, isRunning, start, stop, reset } = useStopwatch();
 
   return (
     <div>

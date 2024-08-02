@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import { isBrowser } from "../utils";
 
-interface UseStopWatch {
+interface UseStopwatch {
 	(): {
 		time: number;
 		isRunning: boolean;
@@ -16,7 +16,7 @@ interface UseStopWatch {
  *
  * @returns An object containing the current time in milliseconds, isRunning state, and functions to start, stop, and reset the stopwatch.
  */
-const useStopWatch: UseStopWatch = () => {
+const useStopwatch: UseStopwatch = () => {
 	const [time, setTime] = useState<number>(0);
 	const [isRunning, setIsRunning] = useState<boolean>(false);
 	const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -68,4 +68,4 @@ const useStopWatch: UseStopWatch = () => {
 	};
 };
 
-export default useStopWatch;
+export default useStopwatch;

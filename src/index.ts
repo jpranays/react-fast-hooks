@@ -10,7 +10,7 @@ export { default as useWindowScrollIntoPosition } from "./hooks/useWindowScrollI
 export { default as useScrollPosition } from "./hooks/useScrollPosition";
 export { default as useScrollIntoPosition } from "./hooks/useScrollIntoPosition";
 export { default as useFocusBlur } from "./hooks/useFocusBlur";
-export { default as useStopWatch } from "./hooks/useStopWatch";
+export { default as useStopWatch } from "./hooks/useStopwatch";
 export { default as useFavicon } from "./hooks/useFavicon";
 export { default as useScript } from "./hooks/useScript";
 export { default as useHover } from "./hooks/useHover";
