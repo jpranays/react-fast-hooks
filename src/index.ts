@@ -40,5 +40,6 @@ export { default as useUpdateEffect } from "./hooks/useUpdateEffect";
 export { default as useSound } from "./hooks/useSound";
 export { default as useVibration } from "./hooks/useVibration";
 export { default as usePreferredLanguage } from "./hooks/usePreferredLanguage";
+export { default as useNotification } from "./hooks/useNotification";
 
 
