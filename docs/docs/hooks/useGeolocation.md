@@ -8,25 +8,26 @@ Hook to get the current geolocation.
 
 ### Usage
 
-```typescript
-import { useGeolocation } from "react-fast-hooks";
+```jsx live
+function App() {
+	const geolocation = useGeolocation();
 
-const App = () => {
- const geolocation = useGeolocation();
-
- return (
-  <div>
-   <p>Latitude: {geolocation.latitude}</p>
-   <p>Longitude: {geolocation.longitude}</p>
-   <p>Accuracy: {geolocation.accuracy} meters</p>
-   <p>Altitude: {geolocation.altitude}</p>
-   <p>Altitude Accuracy: {geolocation.altitudeAccuracy} meters</p>
-   <p>Heading: {geolocation.heading}</p>
-   <p>Speed: {geolocation.speed}</p>
-   <p>Timestamp: {new Date(geolocation.timestamp).toLocaleString()}</p>
-  </div>
- );
-};
+	return (
+		<div>
+			<p>Latitude: {geolocation.latitude}</p>
+			<p>Longitude: {geolocation.longitude}</p>
+			<p>Accuracy: {geolocation.accuracy} meters</p>
+			<p>Altitude: {geolocation.altitude}</p>
+			<p>Altitude Accuracy: {geolocation.altitudeAccuracy} meters</p>
+			<p>Heading: {geolocation.heading}</p>
+			<p>Speed: {geolocation.speed}</p>
+			<p>Timestamp: {new Date(geolocation.timestamp).toLocaleString()}</p>
+            {geolocation.error && (
+                <p>Error: {geolocation.error.message}</p>
+            )}
+		</div>
+	);
+}
 ```
 
 ### API

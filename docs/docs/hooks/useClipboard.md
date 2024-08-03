@@ -8,20 +8,18 @@ Hook to copy text to the clipboard.
 
 ### Usage
 
-```typescript
-import { useClipboard } from "react-fast-hooks";
+```jsx live
+function App() {
+	const { copy, isCopied } = useClipboard();
 
-const App = () => {
- const { copy, isCopied } = useClipboard();
-
- return (
-  <div>
-   <button onClick={() => copy("Text to copy")}>
-    {isCopied ? "Copied!" : "Copy"}
-   </button>
-  </div>
- );
-};
+	return (
+		<div>
+			<button onClick={() => copy("Text to copy")}>
+				{isCopied ? "Copied!" : "Copy"}
+			</button>
+		</div>
+	);
+}
 ```
 
 ### API

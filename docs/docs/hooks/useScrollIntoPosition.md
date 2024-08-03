@@ -8,30 +8,28 @@ Hook to scroll an element to a specific position.
 
 ### Usage
 
-```typescript
-import { useRef } from "react";
-import { useScrollIntoPosition } from "react-fast-hooks";
+```jsx live
+function App() {
+	const elementRef = useRef(null);
+	const scrollToPosition = useScrollIntoPosition(elementRef);
 
-const App = () => {
- const elementRef = useRef<HTMLDivElement>(null);
- const scrollToPosition = useScrollIntoPosition(elementRef);
+	const handleScroll = () => {
+		scrollToPosition({ x: 100, y: 200, behavior: "smooth" });
+	};
 
- const handleScroll = () => {
-  scrollToPosition({ x: 100, y: 200, behavior: "smooth" });
- };
-
- return (
-  <div>
-   <div
-    ref={elementRef}
-    style={{ width: "200px", height: "200px", overflow: "scroll" }}
-   >
-    {/* Content here */}
-   </div>
-   <button onClick={handleScroll}>Scroll to Position</button>
-  </div>
- );
-};
+	return (
+		<div style={{ display: "flex", alignItems: "center" }}>
+			<div
+				ref={elementRef}
+				style={{ width: "200px", height: "500px", overflow: "scroll" }}
+			>
+				{/* Content here */}
+				<div style={{ height: "1000px" }}></div>
+			</div>
+			<button onClick={handleScroll}>Scroll to Position</button>
+		</div>
+	);
+}
 ```
 
 ### API

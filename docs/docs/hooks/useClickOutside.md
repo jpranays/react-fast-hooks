@@ -8,29 +8,23 @@ Hook to detect clicks outside of a specified element.
 
 ### Usage
 
-```typescript
-import React, { useRef, useState } from "react";
-import { useClickOutside } from "react-fast-hooks";
+```jsx live
+function App() {
+	const [isOpen, setIsOpen] = useState(true);
+	const ref = useRef(null);
 
-const App = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
+	useClickOutside(ref, () => {
+		console.log("Clicked outside the element");
+	});
 
-  useClickOutside(ref, () => {
-    setIsOpen(false);
-  });
-
-  return (
-    <div>
-      <button onClick={() => setIsOpen(!isOpen)}>Toggle Dropdown</button>
-      {isOpen && (
-        <div ref={ref}>
-          <p>Click outside this element to close it.</p>
-        </div>
-      )}
-    </div>
-  );
-};
+	return (
+		<div>
+			<div ref={ref} style={{ backgroundColor: "red", color: "white" }}>
+				<p>Click outside this element and check the console.</p>
+			</div>
+		</div>
+	);
+}
 ```
 
 ### API

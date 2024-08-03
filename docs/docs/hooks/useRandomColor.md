@@ -8,22 +8,17 @@ Hook to generate a random color.
 
 ### Usage
 
-```typescript
-import React from "react";
-import { useRandomColor } from "react-fast-hooks";
+```jsx live
+function App() {
+	const { color, generateNewColor } = useRandomColor();
 
-const App = () => {
-  const { color, generateNewColor } = useRandomColor();
-
-  return (
-    <div style={{ backgroundColor: color, height: "100vh" }}>
-      <h1 style={{ color: "#FFF" }}>Random Color Background</h1>
-      <button onClick={generateNewColor}>Generate New Color</button>
-    </div>
-  );
-};
-
-export default App;
+	return (
+		<div style={{ backgroundColor: color, height: "100vh" }}>
+			<h1 style={{ color: "#FFF" }}>Random Color Background</h1>
+			<button onClick={generateNewColor}>Generate New Color</button>
+		</div>
+	);
+}
 ```
 
 ### API

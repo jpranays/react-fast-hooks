@@ -9,7 +9,7 @@ Hook to get the current battery status of the device.
 ### Usage
 
 ```jsx live
-function Clock() {
+function App() {
 	const batteryState = useBattery();
 
 	return (

@@ -8,18 +8,23 @@ Hook to detect media query matches.
 
 ### Usage
 
-```typescript
-import { useMediaQuery } from 'react-fast-hooks';
+```jsx live
+function App() {
+	const isMobile = useMediaQuery("(max-width: 600px)");
 
-const MyComponent = () => {
-  const isMobile = useMediaQuery('(max-width: 600px)');
+	const isDesktop = useMediaQuery("(min-width: 1024px)");
 
-  return (
-    <div>
-      {isMobile ? <p>Mobile View</p> : <p>Desktop View</p>}
-    </div>
-  );
-};
+	return (
+		<>
+			<div>
+				<p>Mobile View : {isMobile ? "true" : "false"}</p>
+			</div>
+			<div>
+				<p>Desktop View : {isDesktop ? "true" : "false"}</p>
+			</div>
+		</>
+	);
+}
 ```
 
 ### API

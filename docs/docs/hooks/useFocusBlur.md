@@ -8,22 +8,19 @@ Hook to get focus and blur functions for an element.
 
 ### Usage
 
-```typescript
-import { useRef } from "react";
-import { useFocusBlur } from "react-fast-hooks";
+```jsx live
+function App() {
+	const inputRef = useRef(null);
+	const { focus, blur } = useFocusBlur(inputRef);
 
-const App = () => {
-  const inputRef = useRef<HTMLInputElement>(null);
-  const { focus, blur } = useFocusBlur(inputRef);
-
-  return (
-    <div>
-      <input ref={inputRef} type="text" />
-      <button onClick={focus}>Focus</button>
-      <button onClick={blur}>Blur</button>
-    </div>
-  );
-};
+	return (
+		<div>
+			<input ref={inputRef} type="text" />
+			<button onClick={focus}>Focus</button>
+			<button onClick={blur}>Blur</button>
+		</div>
+	);
+}
 ```
 
 ### API

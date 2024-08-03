@@ -8,18 +8,16 @@ Hook to get the online status of the browser.
 
 ### Usage
 
-```typescript
-import { useOnlineStatus } from 'react-fast-hooks';
+```jsx live
+function App() {
+	const isOnline = useOnlineStatus();
 
-const App = () => {
-  const isOnline = useOnlineStatus();
-
-  return (
-    <div>
-      <p>{isOnline ? "You are online" : "You are offline"}</p>
-    </div>
-  );
-};
+	return (
+		<div>
+			<p>{isOnline ? "You are online" : "You are offline"}</p>
+		</div>
+	);
+}
 ```
 
 ### API

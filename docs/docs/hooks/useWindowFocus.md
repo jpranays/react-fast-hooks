@@ -8,19 +8,17 @@ Hook to track the focus state of the window.
 
 ### Usage
 
-```typescript
-import { useWindowFocus } from "react-fast-hooks";
+```jsx live
+function App() {
+	const isWindowFocused = useWindowFocus();
 
-const App = () => {
-  const isWindowFocused = useWindowFocus();
-
-  return (
-    <div>
-      <h1>Window Focus Hook</h1>
-      <p>{isWindowFocused ? "Window is focused" : "Window is not focused"}</p>
-    </div>
-  );
-};
+	return (
+		<div>
+			<h1>Window Focus Hook</h1>
+			<p>{isWindowFocused ? "Window is focused" : "Window is not focused"}</p>
+		</div>
+	);
+}
 ```
 
 ### API

@@ -8,34 +8,28 @@ Hook to observe the visibility of an element using the Intersection Observer API
 
 ### Usage
 
-```typescript
-import React, { useRef, useEffect } from "react";
-import { useIntersectionObserver } from "react-fast-hooks";
+```jsx live
+function App() {
+	const elementRef = useRef(null);
 
-const App = () => {
- const [observer, entry] = useIntersectionObserver({
-  root: null,
-  rootMargin: "0px",
-  threshold: 1.0,
- });
+	const entry = useIntersectionObserver(elementRef, {
+		threshold: 1,
+	});
 
- const elementRef = useRef<HTMLDivElement | null>(null);
-
- useEffect(() => {
-  observer(elementRef.current);
- }, [observer]);
-
- return (
-  <div>
-   <div
-    ref={elementRef}
-    style={{ height: "100vh", background: "lightblue" }}
-   >
-    {entry?.isIntersecting ? "In view" : "Out of view"}
-   </div>
-  </div>
- );
-};
+	return (
+		<div>
+			<div
+				ref={elementRef}
+				style={{
+					height: "100px",
+					background: entry?.isIntersecting ? "lightblue" : "red",
+				}}
+			>
+				{entry?.isIntersecting ? "In view" : "Out of view"}
+			</div>
+		</div>
+	);
+}
 ```
 
 ### API

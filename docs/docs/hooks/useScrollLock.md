@@ -8,21 +8,18 @@ Hook to lock and unlock scrolling on the body element with an extra layer of sec
 
 ### Usage
 
-```typescript
-import React from "react";
-import { useScrollLock } from "react-fast-hooks";
+```jsx live
+function App() {
+	const { lockScroll, unlockScroll, isLocked } = useScrollLock();
 
-const App = () => {
-  const { lockScroll, unlockScroll, isLocked } = useScrollLock();
-
-  return (
-    <div>
-      <button onClick={lockScroll}>Lock Scroll</button>
-      <button onClick={unlockScroll}>Unlock Scroll</button>
-      <p>{`Scroll is ${isLocked ? "locked" : "unlocked"}`}</p>
-    </div>
-  );
-};
+	return (
+		<div>
+			<button onClick={lockScroll}>Lock Scroll</button>
+			<button onClick={unlockScroll}>Unlock Scroll</button>
+			<p>{`Scroll is ${isLocked ? "locked" : "unlocked"}`}</p>
+		</div>
+	);
+}
 ```
 
 ### API
