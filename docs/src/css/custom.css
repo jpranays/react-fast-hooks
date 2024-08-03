@@ -1,42 +1,61 @@
 @import "font-awesome/css/font-awesome.min.css";
+
 :root {
-	--ifm-color-primary: #007bff; /* Bright Blue */
-	--ifm-color-primary-dark: #0056b3; /* Darker Blue */
-	--ifm-color-primary-darker: #004085; /* Even Darker Blue */
-	--ifm-color-primary-darkest: #003366; /* Navy Blue */
-	--ifm-color-primary-light: #66b2ff; /* Light Blue */
-	--ifm-color-primary-lighter: #cce5ff; /* Very Light Blue */
-	--ifm-color-primary-lightest: #e6f0ff; /* Pale Blue */
-	--docusaurus-highlighted-code-line-bg: rgba(
-		0,
-		0,
-		0,
-		0.1
-	); /* Subtle Highlight */
-	--hero-baner-bg: #f8f9fa; /* Light Gray */
-	--background-color: #ffffff; /* White */
+	--ifm-color-primary: #007bff;
+	/* Bright Blue */
+	--ifm-color-primary-dark: #0056b3;
+	/* Darker Blue */
+	--ifm-color-primary-darker: #004085;
+	/* Even Darker Blue */
+	--ifm-color-primary-darkest: #003366;
+	/* Navy Blue */
+	--ifm-color-primary-light: #66b2ff;
+	/* Light Blue */
+	--ifm-color-primary-lighter: #cce5ff;
+	/* Very Light Blue */
+	--ifm-color-primary-lightest: #e6f0ff;
+	/* Pale Blue */
+	--docusaurus-highlighted-code-line-bg: rgba(0,
+			0,
+			0,
+			0.1);
+	/* Subtle Highlight */
+	--hero-baner-bg: #f8f9fa;
+	/* Light Gray */
+	--background-color: #ffffff;
+	/* White */
 }
 
 [data-theme="dark"] {
-	--ifm-color-primary: #66b2ff; /* Light Blue */
-	--ifm-color-primary-dark: #007bff; /* Bright Blue */
-	--ifm-color-primary-darker: #0056b3; /* Darker Blue */
-	--ifm-color-primary-darkest: #003366; /* Navy Blue */
-	--ifm-color-primary-light: #80cfff; /* Light Cyan */
-	--ifm-color-primary-lighter: #cce5ff; /* Very Light Blue */
-	--ifm-color-primary-lightest: #e6f0ff; /* Pale Blue */
-	--hero-baner-bg: #212529; /* Dark Gray */
-	--docusaurus-highlighted-code-line-bg: rgba(
-		255,
-		255,
-		255,
-		0.1
-	); /* Subtle Highlight */
-	--background-color: #121212; /* Very Dark Gray */
+	--ifm-color-primary: #66b2ff;
+	/* Light Blue */
+	--ifm-color-primary-dark: #007bff;
+	/* Bright Blue */
+	--ifm-color-primary-darker: #0056b3;
+	/* Darker Blue */
+	--ifm-color-primary-darkest: #003366;
+	/* Navy Blue */
+	--ifm-color-primary-light: #80cfff;
+	/* Light Cyan */
+	--ifm-color-primary-lighter: #cce5ff;
+	/* Very Light Blue */
+	--ifm-color-primary-lightest: #e6f0ff;
+	/* Pale Blue */
+	--hero-baner-bg: #212529;
+	/* Dark Gray */
+	--docusaurus-highlighted-code-line-bg: rgba(255,
+			255,
+			255,
+			0.1);
+	/* Subtle Highlight */
+	--background-color: #121212;
+	/* Very Dark Gray */
 }
-.navbar__items--right{
+
+.navbar__items--right {
 	gap: 0.5rem;
 }
+
 .navbar__icon {
 	height: 2rem;
 	width: 2rem;
@@ -62,4 +81,10 @@ html[data-theme="dark"] .navbar__github {
 
 .navbar__github:hover {
 	background: var(--ifm-color-emphasis-200);
+}
+
+.playgroundContainer_node_modules-\@docusaurus-theme-live-codeblock-lib-theme-Playground-styles-module {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
