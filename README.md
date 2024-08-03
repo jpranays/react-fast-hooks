@@ -39,3 +39,7 @@ npm install react-fast-hooks
 ## Documentation
 
 For more detailed documentation, visit the [website](https://react-fast-hooks.netlify.app/).
+
+## Contributing
+
+Contribution guidelines [coming soon]().
