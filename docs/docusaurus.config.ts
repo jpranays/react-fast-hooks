@@ -51,8 +51,10 @@ const config: Config = {
 				},
 				{
 					href: "https://github.com/jpranays/react-fast-hooks",
-					label: "GitHub",
+					"aria-label": "GitHub",
+					className: "navbar__icon navbar__github",
 					position: "right",
+					html: '<i class="fa fa-github"></i>',
 				},
 			],
 		},

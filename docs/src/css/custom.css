@@ -1,3 +1,4 @@
+@import "font-awesome/css/font-awesome.min.css";
 :root {
 	--ifm-color-primary: #007bff; /* Bright Blue */
 	--ifm-color-primary-dark: #0056b3; /* Darker Blue */
@@ -6,11 +7,15 @@
 	--ifm-color-primary-light: #66b2ff; /* Light Blue */
 	--ifm-color-primary-lighter: #cce5ff; /* Very Light Blue */
 	--ifm-color-primary-lightest: #e6f0ff; /* Pale Blue */
-	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* Subtle Highlight */
+	--docusaurus-highlighted-code-line-bg: rgba(
+		0,
+		0,
+		0,
+		0.1
+	); /* Subtle Highlight */
 	--hero-baner-bg: #f8f9fa; /* Light Gray */
 	--background-color: #ffffff; /* White */
 }
-
 
 [data-theme="dark"] {
 	--ifm-color-primary: #66b2ff; /* Light Blue */
@@ -21,6 +26,40 @@
 	--ifm-color-primary-lighter: #cce5ff; /* Very Light Blue */
 	--ifm-color-primary-lightest: #e6f0ff; /* Pale Blue */
 	--hero-baner-bg: #212529; /* Dark Gray */
-	--docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1); /* Subtle Highlight */
+	--docusaurus-highlighted-code-line-bg: rgba(
+		255,
+		255,
+		255,
+		0.1
+	); /* Subtle Highlight */
 	--background-color: #121212; /* Very Dark Gray */
+}
+.navbar__items--right{
+	gap: 0.5rem;
+}
+.navbar__icon {
+	height: 2rem;
+	width: 2rem;
+}
+
+.navbar__github {
+	-webkit-tap-highlight-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 2rem;
+	transition: background var(--ifm-transition-fast);
+}
+
+html[data-theme="light"] .navbar__github {
+	color: #000;
+}
+
+html[data-theme="dark"] .navbar__github {
+	color: #fff;
+}
+
+.navbar__github:hover {
+	background: var(--ifm-color-emphasis-200);
 }
