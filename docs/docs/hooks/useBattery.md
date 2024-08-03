@@ -8,29 +8,27 @@ Hook to get the current battery status of the device.
 
 ### Usage
 
-```typescript
-import { useBattery } from 'react-fast-hooks';
+```jsx live
+function Clock() {
+	const batteryState = useBattery();
 
-const App = () => {
-  const batteryState = useBattery();
-
-  return (
-    <div>
-      {batteryState.loading ? (
-        <p>Loading battery status...</p>
-      ) : !batteryState.supported ? (
-        <p>Battery API not supported on this device.</p>
-      ) : (
-        <div>
-          <p>Battery Level: {batteryState.level * 100}%</p>
-          <p>Charging: {batteryState.charging ? 'Yes' : 'No'}</p>
-          <p>Charging Time: {batteryState.chargingTime} seconds</p>
-          <p>Discharging Time: {batteryState.dischargingTime} seconds</p>
-        </div>
-      )}
-    </div>
-  );
-};
+	return (
+		<div>
+			{batteryState.loading ? (
+				<p>Loading battery status...</p>
+			) : !batteryState.supported ? (
+				<p>Battery API not supported on this device.</p>
+			) : (
+				<div>
+					<p>Battery Level: {batteryState.level * 100}%</p>
+					<p>Charging: {batteryState.charging ? "Yes" : "No"}</p>
+					<p>Charging Time: {batteryState.chargingTime} seconds</p>
+					<p>Discharging Time: {batteryState.dischargingTime} seconds</p>
+				</div>
+			)}
+		</div>
+	);
+}
 ```
 
 ### API
@@ -45,4 +43,3 @@ An object containing the following properties:
 - `charging` : A boolean or null indicating whether the battery is currently charging.
 - `chargingTime` : A number or null indicating the time remaining until the battery is fully charged (in seconds).
 - `dischargingTime` : A number or null indicating the time remaining until the battery is fully discharged (in seconds).
-  
