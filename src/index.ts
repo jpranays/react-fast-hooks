@@ -43,5 +43,9 @@ export { default as usePreferredLanguage } from "./hooks/usePreferredLanguage";
 export { default as useNotification } from "./hooks/useNotification";
 export { default as useBeforeUnload } from "./hooks/useBeforeUnload";
 export { default as useHistory } from "./hooks/useHistory";
+export { default as useTouch } from "./hooks/useTouch";
+export { default as useWindowTouchSwipe } from "./hooks/useWindowTouchSwipe";
+export { default as useTouchSwipe } from "./hooks/useTouchSwipe";
+
 
 
