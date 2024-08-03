@@ -1,29 +1,22 @@
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  color: var(--ifm-color-primary);
-  background-color: var(--hero-baner-bg);
-}
-.container{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  width: 100%;
+	padding: 4rem 0;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	color: var(--ifm-color-primary);
+	background-color: var(--hero-baner-bg);
+	background: url(../../static/bg.svg) no-repeat center center;
+	background-size: cover;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+	.heroBanner {
+		padding: 2rem;
+	}
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
