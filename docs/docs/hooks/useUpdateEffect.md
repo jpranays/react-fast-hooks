@@ -8,11 +8,11 @@ Hook that runs an effect only when the component updates, skipping the initial r
 
 ### Usage
 
-```typescript
+```jsx live
 import React, { useState } from 'react';
 import { useUpdateEffect } from 'react-fast-hooks';
 
-const App = () => {
+function App() {
   const [count, setCount] = useState(0);
 
   useUpdateEffect(() => {

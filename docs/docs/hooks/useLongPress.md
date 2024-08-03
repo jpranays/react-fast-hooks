@@ -8,40 +8,32 @@ Enable precise control of long-press interactions for both touch and mouse event
 
 ### Usage
 
-```typescript
-import React, { useRef } from "react";
-import {useLongPress} from "react-fast-hooks";
+```jsx live
+function App() {
+	const buttonRef = useRef(null);
 
-const App = () => {
-  const buttonRef = useRef<HTMLButtonElement>(null);
+	const onLongPress = () => {
+		console.log("Long press triggered!");
+		alert("Long press triggered!");
+	};
 
-  const onLongPress = () => {
-    console.log("Long press triggered!");
-  };
+	const onPress = () => {
+		console.log("Press started!");
+	};
 
-  const onPress = () => {
-    console.log("Press started!");
-  };
+	const onRelease = () => {
+		console.log("Press released!");
+	};
 
-  const onRelease = () => {
-    console.log("Press released!");
-  };
+	useLongPress(buttonRef, {
+		threshold: 1500,
+		onLongPress,
+		onPress,
+		onRelease,
+	});
 
-  useLongPress(buttonRef, {
-    threshold: 1000,
-    onLongPress,
-    onPress,
-    onRelease,
-  });
-
-  return (
-    <button ref={buttonRef}>
-      Long Press Me
-    </button>
-  );
-};
-
-export default App;
+	return <button ref={buttonRef}>Long Press Me</button>;
+}
 ```
 
 ### API
@@ -54,4 +46,3 @@ Parameters
   - `onLongPress` : `() => void` - The function to call when the long press event is triggered.
   - `onPress` : `() => void` - The function to call when the press event starts.
   - `onRelease` : `() => void` - The function to call when the press event is released.
-  

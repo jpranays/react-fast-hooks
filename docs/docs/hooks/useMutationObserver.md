@@ -8,32 +8,30 @@ Hook to observe changes to a DOM element using MutationObserver.
 
 ### Usage
 
-```typescript
-import { useRef } from "react";
-import useMutationObserver from "react-fast-hooks";
+```jsx live
+function App() {
+	const elementRef = useRef(null);
 
-const App = () => {
- const elementRef = useRef<HTMLDivElement>(null);
+	useMutationObserver(
+		elementRef,
+		(mutations) => {
+			mutations.forEach((mutation) => {
+				console.log(mutation);
+			});
+		},
+		{
+			childList: true,
+			attributes: true,
+		}
+	);
 
- useMutationObserver(
-  elementRef,
-  (mutations) => {
-   mutations.forEach((mutation) => {
-    console.log(mutation);
-   });
-  },
-  {
-   childList: true,
-   attributes: true,
-  }
- );
-
- return (
-  <div ref={elementRef}>
-   <p>Observe changes to this element</p>
-  </div>
- );
-};
+	return (
+		<div ref={elementRef}>
+			// Try changing the style of this element from the dev tools
+			<p>Observe changes to this element</p>
+		</div>
+	);
+}
 ```
 
 ### API

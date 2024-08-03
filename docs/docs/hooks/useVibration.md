@@ -8,11 +8,11 @@ Hook to manage vibration on supported devices.
 
 ### Usage
 
-```typescript
+```jsx live
 import React from 'react';
 import { useVibration } from 'react-fast-hooks';
 
-const App = () => {
+function App() {
   const { vibrate, stop, isSupported, error } = useVibration();
 
   return (

@@ -8,19 +8,17 @@ Hook to get the current window size.
 
 ### Usage
 
-```typescript
-import { useWindowSize } from 'react-fast-hooks';
+```jsx live
+function App() {
+	const { width, height } = useWindowSize(200); // Optional throttle time
 
-const App = () => {
-  const { width, height } = useWindowSize(200); // Optional throttle time
-
-  return (
-    <div>
-      <p>Window Width: {width}px</p>
-      <p>Window Height: {height}px</p>
-    </div>
-  );
-};
+	return (
+		<div>
+			<p>Window Width: {width}px</p>
+			<p>Window Height: {height}px</p>
+		</div>
+	);
+}
 ```
 
 ### API
@@ -33,4 +31,3 @@ Returns : `WindowSize`
 
 - `width` : A number or null indicating the current width of the window.
 - `height` : A number or null indicating the current height of the window.
-  

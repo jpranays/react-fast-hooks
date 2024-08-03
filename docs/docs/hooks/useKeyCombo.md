@@ -8,19 +8,17 @@ Hook to detect if a specified key combination is pressed.
 
 ### Usage
 
-```typescript
-import { useKeyCombo } from "react-fast-hooks";
+```jsx live
+function App() {
+	const isCtrlShiftPressed = useKeyCombo(["Control", "Shift"]);
 
-const App = () => {
- const isCtrlShiftPressed = useKeyCombo(["Control", "Shift"]);
-
- return (
-  <div>
-   <h1>Press the Ctrl + Shift keys</h1>
-   {isCtrlShiftPressed && <p>Ctrl + Shift keys are pressed!</p>}
-  </div>
- );
-};
+	return (
+		<div>
+			<h1>Press the Ctrl + Shift keys</h1>
+			{isCtrlShiftPressed && <p>Ctrl + Shift keys are pressed!</p>}
+		</div>
+	);
+}
 ```
 
 ### API

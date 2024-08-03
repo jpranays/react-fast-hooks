@@ -8,11 +8,11 @@ Hook to trigger browser notifications.
 
 ### Usage
 
-```typescript
+```jsx live
 import React, { useEffect } from "react";
 import { useNotification } from "react-fast-hooks";
 
-const App = () => {
+function App() {
   const {
     permission,
     showNotification,

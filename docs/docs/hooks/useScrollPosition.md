@@ -8,34 +8,32 @@ Hook to get the current scroll position of a specified element.
 
 ### Usage
 
-```typescript
-import { useRef } from "react";
-import useScrollPosition from "react-fast-hooks";
+```jsx live
+function App() {
+	const elementRef = useRef(null);
+	const scrollPosition = useScrollPosition(elementRef, 200); // Throttle time is 200ms
 
-const App = () => {
-  const elementRef = useRef<HTMLDivElement>(null);
-  const scrollPosition = useScrollPosition(elementRef, 200); // Throttle time is 200ms
-
-  return (
-    <div>
-      <div
-        ref={elementRef}
-        style={{ overflow: "auto", height: "100px", width: "100%" }}
-      >
-        {/* Content goes here */}
-      </div>
-      <p>
-        Scroll X: {scrollPosition.x}, Scroll Y: {scrollPosition.y}
-      </p>
-    </div>
-  );
-};
+	return (
+		<div>
+			<div
+				ref={elementRef}
+				style={{ overflow: "auto", height: "100px", width: "100%" }}
+			>
+				{/* Content goes here */}
+				<div style={{ height: "1000px", width: "5000px" }}></div>
+			</div>
+			<p>
+				Scroll X: {scrollPosition.x}, Scroll Y: {scrollPosition.y}
+			</p>
+		</div>
+	);
+}
 ```
 
 ### API
 
 Parameter  
-  `elementRef` : A React ref object pointing to the element whose scroll position needs to be tracked.
+ `elementRef` : A React ref object pointing to the element whose scroll position needs to be tracked.
 
 - `throttleTime` : A number indicating the time in milliseconds to throttle the window resize event. Defaults to 200.
 

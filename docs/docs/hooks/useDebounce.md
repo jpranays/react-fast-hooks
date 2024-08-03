@@ -8,26 +8,23 @@ Hook to debounce a value.
 
 ### Usage
 
-```typescript
-import React, { useState } from "react";
-import { useDebounce } from "react-fast-hooks";
+```jsx live
+function App() {
+	const [text, setText] = useState("");
+	const debouncedText = useDebounce(text, 500);
 
-const App = () => {
-  const [text, setText] = useState("");
-  const debouncedText = useDebounce(text, 500);
-
-  return (
-    <div>
-      <input
-        type="text"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        placeholder="Type something..."
-      />
-      <p>Debounced Text: {debouncedText}</p>
-    </div>
-  );
-};
+	return (
+		<div>
+			<input
+				type="text"
+				value={text}
+				onChange={(e) => setText(e.target.value)}
+				placeholder="Type something..."
+			/>
+			<p>Debounced Text: {debouncedText}</p>
+		</div>
+	);
+}
 ```
 
 ### API

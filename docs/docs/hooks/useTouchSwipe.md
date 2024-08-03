@@ -8,7 +8,7 @@ Hook to detect touch swipe gestures on a specified element.
 
 ### Usage
 
-```typescript
+```jsx live
 import React, { useRef } from 'react';
 import { useTouchSwipe } from 'react-fast-hooks';
 

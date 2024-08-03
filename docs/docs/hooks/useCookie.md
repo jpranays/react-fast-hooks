@@ -8,11 +8,11 @@ Hook to manage browser cookies.
 
 ### Usage
 
-```typescript
+```jsx live
 import React from "react";
 import { useCookie } from "react-fast-hooks";
 
-const App = () => {
+function App() {
   const { value, setCookie, removeCookie, hasCookie } = useCookie("myCookie");
 
   return (

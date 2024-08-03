@@ -8,18 +8,16 @@ Hook to get the current system theme.
 
 ### Usage
 
-```typescript
-import { useSystemTheme } from "react-fast-hooks";
+```jsx live
+function App() {
+	const theme = useSystemTheme();
 
-const App = () => {
- const theme = useSystemTheme();
-
- return (
-  <div>
-   <p>Current System Theme: {theme}</p>
-  </div>
- );
-};
+	return (
+		<div>
+			<p>Current System Theme: {theme}</p>
+		</div>
+	);
+}
 ```
 
 ### API

@@ -8,22 +8,19 @@ Hook to get the dimensions (width and height) of a specified element.
 
 ### Usage
 
-```typescript
-import { useDimensions } from "react-fast-hooks";
-import { useRef } from "react";
+```jsx live
+function App() {
+	const elementRef = useRef(null);
+	const dimensions = useDimensions(elementRef, 200);
 
-const App = () => {
- const elementRef = useRef<HTMLElement>(null);
- const dimensions = useDimensions(elementRef, 200);
-
- return (
-  <div ref={elementRef}>
-   <h1>Element Dimensions</h1>
-   <p>Width: {dimensions.width}</p>
-   <p>Height: {dimensions.height}</p>
-  </div>
- );
-};
+	return (
+		<div ref={elementRef}>
+			<h4>Element Dimensions</h4>
+			<p>Width: {dimensions.width}</p>
+			<p>Height: {dimensions.height}</p>
+		</div>
+	);
+}
 ```
 
 ### API

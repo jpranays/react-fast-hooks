@@ -8,28 +8,25 @@ Hook to create a debounced version of a callback function.
 
 ### Usage
 
-```typescript
-import React, { useState } from 'react';
-import { useDebouncedCallback } from 'react-fast-hooks';
+```jsx live
+function App() {
+	const [value, setValue] = useState("");
 
-const App = () => {
-  const [value, setValue] = useState('');
-  
-  const debouncedCallback = useDebouncedCallback((newValue) => {
-    console.log('Debounced value:', newValue);
-  }, 300);
+	const debouncedCallback = useDebouncedCallback((newValue) => {
+		console.log("Debounced value:", newValue);
+	}, 300);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
-    debouncedCallback(event.target.value);
-  };
+	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+		setValue(event.target.value);
+		debouncedCallback(event.target.value);
+	};
 
-  return (
-    <div>
-      <input type="text" value={value} onChange={handleChange} />
-    </div>
-  );
-};
+	return (
+		<div>
+			<input type="text" value={value} onChange={handleChange} />
+		</div>
+	);
+}
 ```
 
 ### API

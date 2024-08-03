@@ -8,18 +8,16 @@ Hook to get the current orientation of the device.
 
 ### Usage
 
-```typescript
-import { useDeviceOrientation } from "react-fast-hooks";
+```jsx live
+function App() {
+	const orientation = useDeviceOrientation();
 
-const App = () => {
-  const orientation = useDeviceOrientation();
-
-  return (
-    <div>
-      <h1>Device Orientation: {orientation}</h1>
-    </div>
-  );
-};
+	return (
+		<div>
+			<h4>Device Orientation: {orientation}</h4>
+		</div>
+	);
+}
 ```
 
 ### API

@@ -8,31 +8,24 @@ Hook to manage browser history.
 
 ### Usage
 
-```typescript
-import React from 'react';
-import useHistory from 'react-fast-hooks';
+```jsx live
+function App() {
+	const { push, replace, goBack, goForward, state } = useHistory();
 
-const App = () => {
-  const { push, replace, goBack, goForward, state } = useHistory();
-
-  return (
-    <div>
-      <button onClick={() => push('/new-path', { some: 'state' })}>
-        Push State
-      </button>
-      <button onClick={() => replace('/replace-path', { some: 'state' })}>
-        Replace State
-      </button>
-      <button onClick={() => goBack()}>
-        Go Back
-      </button>
-      <button onClick={() => goForward()}>
-        Go Forward
-      </button>
-      <div>Current State: {JSON.stringify(state)}</div>
-    </div>
-  );
-};
+	return (
+		<div>
+			<button onClick={() => push("/new-path", { some: "state" })}>
+				Push State
+			</button>
+			<button onClick={() => replace("/replace-path", { some: "state" })}>
+				Replace State
+			</button>
+			<button onClick={() => goBack()}>Go Back</button>
+			<button onClick={() => goForward()}>Go Forward</button>
+			<div>Current State: {JSON.stringify(state)}</div>
+		</div>
+	);
+}
 ```
 
 ### API

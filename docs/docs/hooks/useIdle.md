@@ -8,19 +8,17 @@ Hook to detect user inactivity.
 
 ### Usage
 
-```typescript
-import { useIdle } from "react-fast-hooks";
+```jsx live
+function App() {
+	const isIdle = useIdle({ timeout: 5000 });
 
-const App = () => {
- const isIdle = useIdle({ timeout: 5000 });
-
- return (
-  <div>
-   <h1>User Idle Hook</h1>
-   <p>{isIdle ? "User is idle" : "User is active"}</p>
-  </div>
- );
-};
+	return (
+		<div>
+			<h1>User Idle Hook</h1>
+			<p>{isIdle ? "User is idle" : "User is active"}</p>
+		</div>
+	);
+}
 ```
 
 ### API

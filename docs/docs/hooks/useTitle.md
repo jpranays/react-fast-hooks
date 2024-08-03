@@ -8,27 +8,25 @@ Hook to set and get the document title.
 
 ### Usage
 
-```typescript
-import { useTitle } from "react-fast-hooks";
+```jsx live
+function App() {
+	const { setTitle } = useTitle("Initial Title");
 
-const App = () => {
-  const { setTitle } = useTitle("Initial Title");
+	const changeTitle = () => {
+		setTitle("New Title");
+	};
 
-  const changeTitle = () => {
-    setTitle("New Title");
-  };
-
-  return (
-    <div>
-      <button onClick={changeTitle}>Change Title</button>
-    </div>
-  );
-};
+	return (
+		<div>
+			<button onClick={changeTitle}>Change Title</button>
+		</div>
+	);
+}
 ```
 
 ### API
 
-Parameter : `initialTitle*: string` 
+Parameter : `initialTitle*: string`
 
 Returns : `Object`
 

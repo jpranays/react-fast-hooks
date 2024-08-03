@@ -8,19 +8,17 @@ Hook to detect if a specified key is pressed.
 
 ### Usage
 
-```typescript
-import { useKeyPress } from "react-fast-hooks";
+```jsx live
+function App() {
+	const isEnterPressed = useKeyPress("Enter");
 
-const App = () => {
- const isEnterPressed = useKeyPress("Enter");
-
- return (
-  <div>
-   <h1>Press the Enter key</h1>
-   {isEnterPressed && <p>Enter key is pressed!</p>}
-  </div>
- );
-};
+	return (
+		<div>
+			<h1>Press the Enter key</h1>
+			{isEnterPressed && <p>Enter key is pressed!</p>}
+		</div>
+	);
+}
 ```
 
 ### API

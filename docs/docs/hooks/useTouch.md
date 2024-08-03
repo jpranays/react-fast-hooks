@@ -8,11 +8,11 @@ Hook to track touch events on a specified element.
 
 ### Usage
 
-```typescript
+```jsx live
 import React, { useRef } from 'react';
 import { useTouch } from 'react-fast-hooks';
 
-const App = () => {
+function App() {
   const elementRef = useRef<HTMLDivElement | null>(null);
   const { touchStart, touchMove, touchEnd } = useTouch(elementRef);
 

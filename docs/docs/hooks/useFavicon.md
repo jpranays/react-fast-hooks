@@ -8,23 +8,21 @@ Hook to set and update the favicon of the webpage.
 
 ### Usage
 
-```typescript
-import { useFavicon } from "react-fast-hooks";
+```jsx live
+function App() {
+	const changeFavicon = useFavicon("");
 
-const App = () => {
- const changeFavicon = useFavicon("https://example.com/favicon.ico");
+	const handleFaviconChange = () => {
+		changeFavicon("https://github.githubassets.com/favicons/favicon.svg");
+	};
 
- const handleFaviconChange = () => {
-  changeFavicon("https://example.com/new-favicon.ico");
- };
-
- return (
-  <div>
-   <h1>Hello, world!</h1>
-   <button onClick={handleFaviconChange}>Change Favicon</button>
-  </div>
- );
-};
+	return (
+		<div>
+			<h1>Hello, world!</h1>
+			<button onClick={handleFaviconChange}>Change Favicon</button>
+		</div>
+	);
+}
 ```
 
 ### API

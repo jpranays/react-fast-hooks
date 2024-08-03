@@ -8,7 +8,7 @@ Hook to detect touch swipe gestures.
 
 ### Usage
 
-```typescript
+```jsx live
 import React from 'react';
 import { useWindowTouchSwipe } from 'react-fast-hooks';
 

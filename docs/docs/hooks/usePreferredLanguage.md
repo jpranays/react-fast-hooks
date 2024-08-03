@@ -8,11 +8,11 @@ Hook to get the user's preferred language from the browser.
 
 ### Usage
 
-```typescript
+```jsx live
 import React from 'react';
 import { usePreferredLanguage } from 'react-fast-hooks';
 
-const App = () => {
+function App() {
   const { language, languages, isSupported } = usePreferredLanguage();
 
   return (
