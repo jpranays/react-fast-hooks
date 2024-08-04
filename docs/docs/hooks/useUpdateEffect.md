@@ -9,23 +9,20 @@ Hook that runs an effect only when the component updates, skipping the initial r
 ### Usage
 
 ```jsx live
-import React, { useState } from 'react';
-import { useUpdateEffect } from 'react-fast-hooks';
-
 function App() {
-  const [count, setCount] = useState(0);
+	const [count, setCount] = useState(0);
 
-  useUpdateEffect(() => {
-    console.log('Effect runs on updates only');
-  }, [count]);
+	useUpdateEffect(() => {
+		console.log("Effect runs on updates only");
+	}, [count]);
 
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-    </div>
-  );
-};
+	return (
+		<div>
+			<p>Count: {count}</p>
+			<button onClick={() => setCount(count + 1)}>Increment</button>
+		</div>
+	);
+}
 ```
 
 ### API

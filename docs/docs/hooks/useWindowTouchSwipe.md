@@ -9,19 +9,16 @@ Hook to detect touch swipe gestures.
 ### Usage
 
 ```jsx live
-import React from 'react';
-import { useWindowTouchSwipe } from 'react-fast-hooks';
+function App() {
+	const { swipeState, reset } = useWindowTouchSwipe();
 
-const SwipeComponent = () => {
-  const { swipeState, reset } = useWindowTouchSwipe();
-
-  return (
-    <div>
-      <p>Swipe direction: {swipeState.direction}</p>
-      <button onClick={reset}>Reset</button>
-    </div>
-  );
-};
+	return (
+		<div>
+			<p>Swipe direction: {swipeState.direction ?? "Please swipe"}</p>
+			<button onClick={reset}>Reset</button>
+		</div>
+	);
+}
 ```
 
 ### API
@@ -29,10 +26,9 @@ const SwipeComponent = () => {
 Returns : An object with the following properties:
 
 - `swipeState` : `SwipeState` - The swipe state object.
-  - `SwipeState` : `{ direction: SwipeDirection, x: number, y: number }` - 
+  - `SwipeState` : `{ direction: SwipeDirection, x: number, y: number }` -
     - The direction of the swipe and the x and y coordinates of the swipe event.
       - `SwipeDirection` : `'up' | 'down' | 'left' | 'right'` - The direction of the swipe.
       - `x` : `number` - The x coordinate of the swipe event.
       - `y` : `number` - The y coordinate of the swipe event.
-- `reset` : `() => void` - Resets the swipe state. 
-  
+- `reset` : `() => void` - Resets the swipe state.
