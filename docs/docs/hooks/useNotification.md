@@ -9,42 +9,39 @@ Hook to trigger browser notifications.
 ### Usage
 
 ```jsx live
-import React, { useEffect } from "react";
-import { useNotification } from "react-fast-hooks";
-
 function App() {
-  const {
-    permission,
-    showNotification,
-    requestPermission,
-    updateNotification,
-  } = useNotification("Hello!", {
-    body: "This is a notification body",
-    icon: "/path/to/icon.png",
-  });
+	const {
+		permission,
+		showNotification,
+		requestPermission,
+		updateNotification,
+	} = useNotification("Hello!", {
+		body: "This is a notification body",
+		icon: "/path/to/icon.png",
+	});
 
-  useEffect(() => {
-    if (permission === "granted") {
-      showNotification();
-    } else if (permission === "default") {
-      requestPermission();
-    }
-  }, [permission, showNotification, requestPermission]);
+	useEffect(() => {
+		if (permission === "granted") {
+			showNotification();
+		} else if (permission === "default") {
+			requestPermission();
+		}
+	}, [permission, showNotification, requestPermission]);
 
-  const handleUpdateNotification = () => {
-    updateNotification("Updated Title!", {
-      body: "This is an updated notification body",
-      icon: "/path/to/updated-icon.png",
-    });
-  };
+	const handleUpdateNotification = () => {
+		updateNotification("Updated Title!", {
+			body: "This is an updated notification body",
+			icon: "/path/to/updated-icon.png",
+		});
+	};
 
-  return (
-    <div>
-      <button onClick={showNotification}>Show Notification</button>
-      <button onClick={handleUpdateNotification}>Update Notification</button>
-    </div>
-  );
-};
+	return (
+		<div>
+			<button onClick={showNotification}>Show Notification</button>
+			<button onClick={handleUpdateNotification}>Update Notification</button>
+		</div>
+	);
+}
 ```
 
 ### API
@@ -72,4 +69,3 @@ Returns
 - `showNotification` : `() => void` - A function to trigger the notification.
 - `requestPermission` : `() => void` - A function to request notification permission from the user.
 - `updateNotification` : `(newTitle: string, newOptions: NotificationOptions) => void` - A function to update the notification with new title and options.
-  

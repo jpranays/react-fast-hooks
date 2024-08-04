@@ -11,23 +11,32 @@ Hook to play and manage sound effects.
 ```jsx live
 function App() {
 	const { play, pause, stop, setVolume, isPlaying, error } = useSound(
-		"/docs/static/test-sound.mp3"
+		"https://file-examples.com/storage/fe44eeb9cb66ab8ce934f14/2017/11/file_example_MP3_700KB.mp3"
 	);
 
 	return (
 		<div>
-			<button onClick={play}>Play</button>
-			<button onClick={pause}>Pause</button>
-			<button onClick={stop}>Stop</button>
-			<input
-				type="range"
-				min="0"
-				max="1"
-				step="0.01"
-				onChange={(e) => setVolume(Number(e.target.value))}
-			/>
-			{isPlaying ? "Playing" : "Paused"}
-			{error && <p>Error: {error.message}</p>}
+			<button onClick={play} disabled={isPlaying}>
+				Play
+			</button>
+			<button onClick={pause} disabled={!isPlaying}>
+				Pause
+			</button>
+			<button onClick={stop} disabled={!isPlaying}>
+				Stop
+			</button>
+			<p>
+				<label>Volume : </label>
+				<input
+					type="range"
+					min="0"
+					max="1"
+					step="0.01"
+					onChange={(e) => setVolume(Number(e.target.value))}
+				/>
+				<p>{isPlaying ? "Playing" : "Paused"}</p>
+			</p>
+			{error && <p>Error loading sound: {error.message}</p>}
 		</div>
 	);
 }

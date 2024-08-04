@@ -26,7 +26,7 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-fast-hooks": "^1.0.2"
+    "react-fast-hooks": "^1.0.3"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.4.0",

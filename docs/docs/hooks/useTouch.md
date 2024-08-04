@@ -9,21 +9,27 @@ Hook to track touch events on a specified element.
 ### Usage
 
 ```jsx live
-import React, { useRef } from 'react';
-import { useTouch } from 'react-fast-hooks';
-
 function App() {
-  const elementRef = useRef<HTMLDivElement | null>(null);
-  const { touchStart, touchMove, touchEnd } = useTouch(elementRef);
+	const elementRef = useRef(null);
+	const { touchStart, touchMove, touchEnd } = useTouch(elementRef);
 
-  return (
-    <div ref={elementRef} style={{ width: '100%', height: '100vh', backgroundColor: 'lightgray' }}>
-      <p>Touch Start: {touchStart.x}, {touchStart.y}</p>
-      <p>Touch Move: {touchMove.x}, {touchMove.y}</p>
-      <p>Touch End: {touchEnd.x}, {touchEnd.y}</p>
-    </div>
-  );
-};
+	return (
+		<div
+			ref={elementRef}
+			style={{ width: "100%", height: "100vh", backgroundColor: "lightgray" }}
+		>
+			<p>
+				Touch Start: {touchStart.x}, {touchStart.y}
+			</p>
+			<p>
+				Touch Move: {touchMove.x}, {touchMove.y}
+			</p>
+			<p>
+				Touch End: {touchEnd.x}, {touchEnd.y}
+			</p>
+		</div>
+	);
+}
 ```
 
 ### API
