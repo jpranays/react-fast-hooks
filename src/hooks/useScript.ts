@@ -22,10 +22,7 @@ interface options {
  * @param options - An object containing options for the script.
  * @returns An object containing the script loading status and any potential error.
  */
-const useScript: UseScript = (
-	src: string,
-	{ removeOnUnmount = true, async = true, defer = false }: options
-) => {
+const useScript: UseScript = (src: string, options: options = {}) => {
 	const [status, setStatus] = useState<ScriptStatus>({
 		loading: true,
 		error: null,
@@ -36,8 +33,8 @@ const useScript: UseScript = (
 
 		const script = document.createElement("script");
 		script.src = src;
-		script.async = async;
-		script.defer = defer;
+		script.async = options.async ?? true;
+		script.defer = options.defer ?? false;
 
 		const handleLoad = () => {
 			setStatus({ loading: false, error: null });
@@ -58,7 +55,7 @@ const useScript: UseScript = (
 		return () => {
 			script.removeEventListener("load", handleLoad);
 			script.removeEventListener("error", handleError);
-			if (removeOnUnmount) {
+			if (options.removeOnUnmount) {
 				document.body.removeChild(script);
 			}
 		};
