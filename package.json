@@ -1,6 +1,6 @@
 {
 	"name": "react-fast-hooks",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A collection of custom React hooks",
 	"main": "dist/index.esm.js",
 	"module": "dist/index.esm.js",
@@ -16,7 +16,9 @@
 	"keywords": [
 		"react",
 		"hooks",
-		"custom-hooks"
+		"utility-hooks",
+		"custom-hooks",
+		"fast-hooks"
 	],
 	"peerDependencies": {
 		"react": "^16.8.0 || ^17.0.0 || ^18.0.0"
