@@ -31,3 +31,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/build
+        # Additional configuration to ensure correct permissions
+        personal_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        external_repository: jpranays/react-fast-hooks
+        force_orphan: true
