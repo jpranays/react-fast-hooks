@@ -3,7 +3,7 @@ name: Deploy Docusaurus site to GitHub Pages
 on:
   push:
     branches:
-      - master  # Set this to your default branch
+      - master  # Adjust if your default branch is different
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'  # Update to Node.js version 18 or higher
+        node-version: '18'  # Ensure Node.js version is 18 or higher
 
     - name: Install dependencies
       run: npm install
@@ -29,8 +29,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/build
-        # Additional configuration to ensure correct permissions
         personal_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        publish_dir: ./docs/build
+        external_repository: jpranays/react-fast-hooks  # Ensure this is your repo name
         force_orphan: true
