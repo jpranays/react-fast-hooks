@@ -6,15 +6,24 @@ const config: Config = {
 	title: "React-Fast-Hooks",
 	tagline: "Fasten Your React Development",
 	favicon: "img/favicon.ico",
+	// ----
 
-	url: "https://react-fast-hooks.netlify.app/",
-	baseUrl: "/",
+	url: 'https://jpranays.github.io',
+	baseUrl: '/react-fast-hooks/',  // Update this if your repo name is different
+	onBrokenLinks: 'throw',
+	onBrokenMarkdownLinks: 'warn',
+	organizationName: 'jpranays',  // Your GitHub username or organization name
+	projectName: 'react-fast-hooks',  // Your repo name
+	// ----
 
-	organizationName: "jpranays",
-	projectName: "react-fast-hooks",
+	// url: "https://react-fast-hooks.netlify.app/",
+	// baseUrl: "/",
 
-	onBrokenLinks: "throw",
-	onBrokenMarkdownLinks: "warn",
+	// organizationName: "jpranays",
+	// projectName: "react-fast-hooks",
+
+	// onBrokenLinks: "throw",
+	// onBrokenMarkdownLinks: "warn",
 
 	i18n: {
 		defaultLocale: "en",
