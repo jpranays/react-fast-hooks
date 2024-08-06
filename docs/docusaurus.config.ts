@@ -8,12 +8,12 @@ const config: Config = {
 	favicon: "img/favicon.ico",
 	// ----
 
-	url: 'https://jpranays.github.io',
-	baseUrl: '/react-fast-hooks/',  // Update this if your repo name is different
-	onBrokenLinks: 'throw',
-	onBrokenMarkdownLinks: 'warn',
-	organizationName: 'jpranays',  // Your GitHub username or organization name
-	projectName: 'react-fast-hooks',  // Your repo name
+	url: "https://jpranays.github.io",
+	baseUrl: "/react-fast-hooks/", // Update this if your repo name is different
+	onBrokenLinks: "throw",
+	onBrokenMarkdownLinks: "warn",
+	organizationName: "jpranays", // Your GitHub username or organization name
+	projectName: "react-fast-hooks", // Your repo name
 	// ----
 
 	// url: "https://react-fast-hooks.netlify.app/",
@@ -44,6 +44,12 @@ const config: Config = {
 	],
 
 	themeConfig: {
+		algolia: {
+			apiKey: "3012a81621acdbbb5fc663277d5d013e",
+			appId: "1F8174QBLL",
+			indexName: "jpranaysio",
+			contextualSearch: true,
+		},
 		colorMode: {
 			defaultMode: "dark",
 			disableSwitch: false,
@@ -68,8 +74,8 @@ const config: Config = {
 			],
 		},
 		prism: {
-			theme: prismThemes.github,
-			darkTheme: prismThemes.dracula,
+			theme: prismThemes.nightOwlLight,
+			darkTheme: prismThemes.vsDark,
 		},
 	} satisfies Preset.ThemeConfig,
 	themes: ["@docusaurus/theme-live-codeblock"],
