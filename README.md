@@ -1,7 +1,8 @@
-<h1 align="center"> 
-  ⚛️🚀  
-  <a href="https://jpranays.github.io/react-fast-hooks/">react-fast-hooks</a>  
-  <span style="display:inline-block;transform:rotate(45deg);">🚀</span>⚛️  
+
+
+
+<h1 align="center">   
+    <a href="https://jpranays.github.io/react-fast-hooks/">react-fast-hooks<a>     
 </h1>
 <p >
   <a href="https://github.com/jpranays/react-fast-hooks"><img src="https://img.shields.io/badge/-GitHub-323232?style=flat&logo=github&logoColor=white"/></a>
@@ -16,7 +17,7 @@
 </p>
 
 
-<p >These hooks aim to simplify state management, side effects, and other common functionalities in React applications, improving both productivity and code quality.</p>
+<p>These hooks aim to simplify state management, side effects, and other common functionalities in React applications, improving both productivity and code quality.</p>
 
 ## Features
 
