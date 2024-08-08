@@ -55,6 +55,56 @@ npm install react-fast-hooks
 
 For more detailed documentation and live code editor visit the [website](https://jpranays.github.io/react-fast-hooks/).
 
+## Hooks Available
+
+- [useBattery](https://jpranays.github.io/react-fast-hooks/docs/hooks/useBattery) - A hook to get the battery status of the device.
+- [useClickOutside](https://jpranays.github.io/react-fast-hooks/docs/hooks/useClickOutside) - A hook to detect clicks outside a specified element.
+- [useClipboard](https://jpranays.github.io/react-fast-hooks/docs/hooks/useClipboard) - A hook to copy text to the clipboard.
+- [useCookie](https://jpranays.github.io/react-fast-hooks/docs/hooks/useCookie) - A hook to manage browser cookies.
+- [useDebounce](https://jpranays.github.io/react-fast-hooks/docs/hooks/useDebounce) - A hook to debounce a value.
+- [useDebouncedCallback](https://jpranays.github.io/react-fast-hooks/docs/hooks/useDebouncedCallback) - A hook to debounce a callback.
+- [useDeviceOrientation](https://jpranays.github.io/react-fast-hooks/docs/hooks/useDeviceOrientation) - A hook to get the device orientation.
+- [useDimensions](https://jpranays.github.io/react-fast-hooks/docs/hooks/useDimensions) - A hook to get the dimensions of an element.
+- [useEventListener](https://jpranays.github.io/react-fast-hooks/docs/hooks/useEventListener) - A hook to add an event listener to a target.
+- [useFavicon](https://jpranays.github.io/react-fast-hooks/docs/hooks/useFavicon) - A hook to change the favicon of the page.
+- [useFetch](https://jpranays.github.io/react-fast-hooks/docs/hooks/useFetch) - A hook to fetch data.
+- [useFocusBlur](https://jpranays.github.io/react-fast-hooks/docs/hooks/useFocusBlur) - A hook to detect focus and blur events.
+- [useGeolocation](https://jpranays.github.io/react-fast-hooks/docs/hooks/useGeolocation) - A hook to get the geolocation of the device.
+- [useHistory](https://jpranays.github.io/react-fast-hooks/docs/hooks/useHistory) - A hook to manage the browser history.
+- [useHover](https://jpranays.github.io/react-fast-hooks/docs/hooks/useHover) - A hook to detect hover events.
+- [useIdle](https://jpranays.github.io/react-fast-hooks/docs/hooks/useIdle) - A hook to detect when the user is idle.
+- [useIntersectionObserver](https://jpranays.github.io/react-fast-hooks/docs/hooks/useIntersectionObserver) - A hook to observe an element's intersection with the viewport.
+- [useKeyCombo](https://jpranays.github.io/react-fast-hooks/docs/hooks/useKeyCombo) - A hook to detect key combinations.
+- [useKeyPress](https://jpranays.github.io/react-fast-hooks/docs/hooks/useKeyPress) - A hook to detect key presses.
+- [useLocalStorage](https://jpranays.github.io/react-fast-hooks/docs/hooks/useLocalStorage) - A hook to manage local storage.
+- [useLongPress](https://jpranays.github.io/react-fast-hooks/docs/hooks/useLongPress) - A hook to detect long presses.
+- [useMediaQuery](https://jpranays.github.io/react-fast-hooks/docs/hooks/useMediaQuery) - A hook to detect media queries.
+- [useMouse](https://jpranays.github.io/react-fast-hooks/docs/hooks/useMouse) - A hook to get the mouse position.
+- [useMutationObserver](https://jpranays.github.io/react-fast-hooks/docs/hooks/useMutationObserver) - A hook to observe mutations on an element.
+- [useNotification](https://jpranays.github.io/react-fast-hooks/docs/hooks/useNotification) - A hook to show notifications.
+- [useOnlineStatus](https://jpranays.github.io/react-fast-hooks/docs/hooks/useOnlineStatus) - A hook to detect online status.
+- [usePreferredLanguage](https://jpranays.github.io/react-fast-hooks/docs/hooks/usePreferredLanguage) - A hook to get the preferred language of the user.
+- [usePrevious](https://jpranays.github.io/react-fast-hooks/docs/hooks/usePrevious) - A hook to get the previous value of a state.
+- [useRandomColor](https://jpranays.github.io/react-fast-hooks/docs/hooks/useRandomColor) - A hook to generate a random color.
+- [useScript](https://jpranays.github.io/react-fast-hooks/docs/hooks/useScript) - A hook to load an external script.
+- [useScrollIntoPosition](https://jpranays.github.io/react-fast-hooks/docs/hooks/useScrollIntoPosition) - A hook to scroll an element into view.
+- [useScrollLock](https://jpranays.github.io/react-fast-hooks/docs/hooks/useScrollLock) - A hook to lock scrolling.
+- [useScrollPosition](https://jpranays.github.io/react-fast-hooks/docs/hooks/useScrollPosition) - A hook to get the scroll position.
+- [useSessionStorage](https://jpranays.github.io/react-fast-hooks/docs/hooks/useSessionStorage) - A hook to manage session storage.
+- [useSound](https://jpranays.github.io/react-fast-hooks/docs/hooks/useSound) - A hook to play sounds.
+- [useStopwatch](https://jpranays.github.io/react-fast-hooks/docs/hooks/useStopwatch) - A hook to create a stopwatch.
+- [useSystemTheme](https://jpranays.github.io/react-fast-hooks/docs/hooks/useSystemTheme) - A hook to get the system theme.
+- [useTitle](https://jpranays.github.io/react-fast-hooks/docs/hooks/useTitle) - A hook to set the document title.
+- [useTouch](https://jpranays.github.io/react-fast-hooks/docs/hooks/useTouch) - A hook to detect touch events.
+- [useTouchSwipe](https://jpranays.github.io/react-fast-hooks/docs/hooks/useTouchSwipe) - A hook to detect touch swipe events.
+- [useUpdateEffect](https://jpranays.github.io/react-fast-hooks/docs/hooks/useUpdateEffect) - A hook to run an effect only on updates.
+- [useVibration](https://jpranays.github.io/react-fast-hooks/docs/hooks/useVibration) - A hook to vibrate the device.
+- [useWindowFocus](https://jpranays.github.io/react-fast-hooks/docs/hooks/useWindowFocus) - A hook to detect window focus.
+- [useWindowScrollIntoPosition](https://jpranays.github.io/react-fast-hooks/docs/hooks/useWindowScrollIntoPosition) - A hook to scroll the window to a position.
+- [useWindowScrollPosition](https://jpranays.github.io/react-fast-hooks/docs/hooks/useWindowScrollPosition) - A hook to get the window scroll position.
+- [useWindowSize](https://jpranays.github.io/react-fast-hooks/docs/hooks/useWindowSize) - A hook to get the window size.
+- [useWindowTouchSwipe](https://jpranays.github.io/react-fast-hooks/docs/hooks/useWindowTouchSwipe) - A hook to detect window touch swipe events.
+
 ## Contributing
 
 Contribution guidelines [coming soon]().
