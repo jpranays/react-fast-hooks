@@ -14,6 +14,12 @@
   <a href="https://www.npmjs.com/package/react-fast-hooks"><img src="https://flat.badgen.net/npm/types/react-fast-hooks/" alt="Types"/></a>
   <a href="https://bundlephobia.com/result?p=react-fast-hooks"><img src="https://flat.badgen.net/bundlephobia/tree-shaking/react-fast-hooks" alt="Tree Shaking"/></a>
   <a href="https://github.com/jpranays/react-fast-hooks/actions/workflows/deploy.yml"><img src="https://img.shields.io/badge/Build%20Passing-007ec6?style=flat&logo=github" alt="Build Passing"/></a>
+  <a href="https://jpranays.github.io/react-fast-hooks/"><img src="https://img.shields.io/badge/Docs-blue" alt="DOCS"></a>  
+  <img src="https://img.shields.io/badge/maintained-yes-blue" alt="maintained - yes">
+  <a href="https://pages.github.com/" title="Go to GitHub Pages homepage"><img src="https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white" alt="Hosted with GH Pages"></a>
+  <a href="https://github.com/features/actions" title="Go to GitHub Actions homepage"><img src="https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white" alt="Made with GH Actions"></a>
+
+
 </p>
 
 
