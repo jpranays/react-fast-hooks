@@ -1,5 +1,5 @@
        
-
+ 
 
 <h1 align="center">   
     <a href="https://jpranays.github.io/react-fast-hooks/">react-fast-hooks<a>     
