@@ -106,6 +106,6 @@ html[data-theme="dark"] .navbar__github {
 	fill: var(--ifm-color-primary);
 }
 .buttonGroup_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module
-	button {
+	button ,.clean-btn{
 	opacity: 0.5 !important;
 }
