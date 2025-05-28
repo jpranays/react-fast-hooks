@@ -4,7 +4,7 @@
 <h1 align="center">   
     <a href="https://jpranays.github.io/react-fast-hooks/">react-fast-hooks<a>     
 </h1>
-<p >
+<p align="center">
   <a href="https://github.com/jpranays/react-fast-hooks"><img src="https://img.shields.io/badge/-GitHub-323232?style=flat&logo=github&logoColor=white"/></a>
   <a href="https://npmjs.org/package/react-fast-hooks"><img src="https://img.shields.io/badge/-NPM-bb2222?style=flat&logo=npm"/></a>
   <a href="https://packagephobia.com/result?p=react-fast-hooks"><img src="https://packagephobia.com/badge?p=react-fast-hooks" alt="Install Size"/></a>
