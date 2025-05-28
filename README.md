@@ -19,6 +19,7 @@
   <a href="https://pages.github.com/" title="Go to GitHub Pages homepage"><img src="https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white" alt="Hosted with GH Pages"></a>
   <a href="https://github.com/features/actions" title="Go to GitHub Actions homepage"><img src="https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white" alt="Made with GH Actions">
   <a href="https://security.snyk.io/package/npm/react-fast-hooks"><img src="https://img.shields.io/badge/Synk_Security-monitored-8f49c0?logo=snyk" alt="Synk Security - monitored"></a>
+  <a href="https://"><img src="https://img.shields.io/badge/jsDelivr-1.0.8-ff5627?logo=jsdelivr" alt="jsDelivr - 1.0.8"></a>
 </a>
 
 
