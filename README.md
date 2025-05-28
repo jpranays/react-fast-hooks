@@ -24,7 +24,7 @@
 
 
 </p>
-
+<hr/>
 
 <p align="center">These hooks aim to simplify state management, side effects, and other common functionalities in React applications, improving both productivity and code quality.</p>
 
