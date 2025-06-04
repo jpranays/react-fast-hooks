@@ -4,7 +4,7 @@
 <h1 align="center">   
     <a href="https://jpranays.github.io/react-fast-hooks/">react-fast-hooks<a>     
 </h1>
-<p >
+<p align="center">
   <a href="https://github.com/jpranays/react-fast-hooks"><img src="https://img.shields.io/badge/-GitHub-323232?style=flat&logo=github&logoColor=white"/></a>
   <a href="https://npmjs.org/package/react-fast-hooks"><img src="https://img.shields.io/badge/-NPM-bb2222?style=flat&logo=npm"/></a>
   <a href="https://packagephobia.com/result?p=react-fast-hooks"><img src="https://packagephobia.com/badge?p=react-fast-hooks" alt="Install Size"/></a>
@@ -17,13 +17,16 @@
   <a href="https://jpranays.github.io/react-fast-hooks/"><img src="https://img.shields.io/badge/Docs-blue" alt="DOCS"></a>  
   <img src="https://img.shields.io/badge/maintained-yes-blue" alt="maintained - yes">
   <a href="https://pages.github.com/" title="Go to GitHub Pages homepage"><img src="https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white" alt="Hosted with GH Pages"></a>
-  <a href="https://github.com/features/actions" title="Go to GitHub Actions homepage"><img src="https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white" alt="Made with GH Actions"></a>
+  <a href="https://github.com/features/actions" title="Go to GitHub Actions homepage"><img src="https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white" alt="Made with GH Actions">
+  <a href="https://security.snyk.io/package/npm/react-fast-hooks"><img src="https://img.shields.io/badge/Synk_Security-monitored-8f49c0?logo=snyk" alt="Synk Security - monitored"></a>
+  <a href="https://cdn.jsdelivr.net/npm/react-fast-hooks@1.0.8/dist/index.esm.min.js"><img src="https://img.shields.io/badge/jsDelivr-1.0.8-ff5627?logo=jsdelivr" alt="jsDelivr - 1.0.8"></a>
+</a>
 
 
 </p>
+<hr/>
 
-
-<p>These hooks aim to simplify state management, side effects, and other common functionalities in React applications, improving both productivity and code quality.</p>
+<p align="center">These hooks aim to simplify state management, side effects, and other common functionalities in React applications, improving both productivity and code quality.</p>
 
 ## Features
 
