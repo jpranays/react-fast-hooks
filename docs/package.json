@@ -19,7 +19,7 @@
     "@docusaurus/preset-classic": "3.8.0",
     "@docusaurus/theme-live-codeblock": "^3.8.0",
     "@docusaurus/theme-search-algolia": "^3.8.0",
-    "@mdx-js/react": "^3.0.0",
+    "@mdx-js/react": "^3.1.0",
     "clsx": "^2.0.0",
     "docs": "file:",
     "dotenv": "^16.5.0",
