@@ -25,6 +25,10 @@ jobs:
     - name: Build Docusaurus site
       run: npm run build
       working-directory: ./docs
+      env:
+        ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+        ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+        ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
