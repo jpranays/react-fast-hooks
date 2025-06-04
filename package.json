@@ -48,5 +48,8 @@
 	},
 	"homepage": "https://jpranays.github.io/react-fast-hooks/",
 	"author": "Pranay <pranay1315@gmail.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^16.5.0"
+	}
 }
