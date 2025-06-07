@@ -11,7 +11,7 @@
   <a href="https://npmcharts.com/compare/react-fast-hooks?minimal=true"><img src="https://img.shields.io/npm/dw/react-fast-hooks.svg?label=Downloads" alt="NPM Downloads"/></a>
   <a href="https://github.com/jpranays/react-fast-hooks/blob/master/LICENSE"><img src="https://badgen.net/badge/License/MIT/blue" alt="License"/></a>
   <a href="https://bundlephobia.com/result?p=react-fast-hooks"><img src="https://img.shields.io/bundlephobia/minzip/react-fast-hooks" alt="NPM Bundle Size"/></a>
-  <a href="https://www.npmjs.com/package/react-fast-hooks"><img src="https://flat.badgen.net/npm/types/react-fast-hooks/" alt="Types"/></a>
+  <a href="https://www.npmjs.com/package/react-fast-hooks/v/latest"><img src="https://flat.badgen.net/npm/types/react-fast-hooks/" alt="Types"/></a>
   <a href="https://bundlephobia.com/result?p=react-fast-hooks"><img src="https://flat.badgen.net/bundlephobia/tree-shaking/react-fast-hooks" alt="Tree Shaking"/></a>
   <a href="https://github.com/jpranays/react-fast-hooks/actions/workflows/deploy.yml"><img src="https://img.shields.io/badge/Build%20Passing-007ec6?style=flat&logo=github" alt="Build Passing"/></a>
   <a href="https://jpranays.github.io/react-fast-hooks/"><img src="https://img.shields.io/badge/Docs-blue" alt="DOCS"></a>  
