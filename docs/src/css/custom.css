@@ -109,3 +109,9 @@ html[data-theme="dark"] .navbar__github {
 	button ,.clean-btn{
 	opacity: 0.5 !important;
 }
+.algoliaLogoPathFill_WdUC + path{
+	fill: var(--ifm-color-primary) !important;
+	& + path{
+		fill: var(--hero-baner-bg) !important;
+	}
+}
